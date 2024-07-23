@@ -1,0 +1,332 @@
+[
+  {
+    "_id": {
+      "$oid": "669f1dc770a38a6880a731e0"
+    },
+    "firstName": "Aiden",
+    "lastName": "Smith",
+    "email": "aiden.smith@example.com",
+    "phoneNumber": "07012345678",
+    "pollingUnit": "Unit A",
+    "LGA": "Ikeja",
+    "state": "Lagos",
+    "country": "Nigeria",
+    "NIN": "123456789012345",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "669f1dc770a38a6880a731e1"
+    },
+    "firstName": "Olivia",
+    "lastName": "Johnson",
+    "email": "olivia.johnson@example.com",
+    "phoneNumber": "08023456789",
+    "pollingUnit": "Unit B",
+    "LGA": "Surulere",
+    "state": "Lagos",
+    "country": "Nigeria",
+    "NIN": "234567890123456",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "669f1dc770a38a6880a731e2"
+    },
+    "firstName": "Ethan",
+    "lastName": "Williams",
+    "email": "ethan.williams@example.com",
+    "phoneNumber": "09034567890",
+    "pollingUnit": "Unit C",
+    "LGA": "Mushin",
+    "state": "Lagos",
+    "country": "Nigeria",
+    "NIN": "345678901234567",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "669f1dc770a38a6880a731e3"
+    },
+    "firstName": "Emma",
+    "lastName": "Brown",
+    "email": "emma.brown@example.com",
+    "phoneNumber": "07098765432",
+    "pollingUnit": "Unit D",
+    "LGA": "Lekki",
+    "state": "Lagos",
+    "country": "Nigeria",
+    "NIN": "456789012345678",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "669f1dc770a38a6880a731e4"
+    },
+    "firstName": "Liam",
+    "lastName": "Jones",
+    "email": "liam.jones@example.com",
+    "phoneNumber": "08087654321",
+    "pollingUnit": "Unit E",
+    "LGA": "Ikorodu",
+    "state": "Lagos",
+    "country": "Nigeria",
+    "NIN": "567890123456789",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "669f1dc770a38a6880a731e5"
+    },
+    "firstName": "Sophia",
+    "lastName": "Garcia",
+    "email": "sophia.garcia@example.com",
+    "phoneNumber": "09087654321",
+    "pollingUnit": "Unit F",
+    "LGA": "Gbagada",
+    "state": "Lagos",
+    "country": "Nigeria",
+    "NIN": "678901234567890",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "669f1dc770a38a6880a731e6"
+    },
+    "firstName": "Mason",
+    "lastName": "Martinez",
+    "email": "mason.martinez@example.com",
+    "phoneNumber": "07087654320",
+    "pollingUnit": "Unit G",
+    "LGA": "Shomolu",
+    "state": "Lagos",
+    "country": "Nigeria",
+    "NIN": "789012345678901",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "669f1dc770a38a6880a731e7"
+    },
+    "firstName": "Isabella",
+    "lastName": "Hernandez",
+    "email": "isabella.hernandez@example.com",
+    "phoneNumber": "08098765432",
+    "pollingUnit": "Unit H",
+    "LGA": "Epe",
+    "state": "Lagos",
+    "country": "Nigeria",
+    "NIN": "890123456789012",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "669f1dc770a38a6880a731e8"
+    },
+    "firstName": "Jacob",
+    "lastName": "Lopez",
+    "email": "jacob.lopez@example.com",
+    "phoneNumber": "09087654322",
+    "pollingUnit": "Unit I",
+    "LGA": "Oshodi",
+    "state": "Lagos",
+    "country": "Nigeria",
+    "NIN": "901234567890123",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "669f1dc770a38a6880a731e9"
+    },
+    "firstName": "Charlotte",
+    "lastName": "Wilson",
+    "email": "charlotte.wilson@example.com",
+    "phoneNumber": "07012345679",
+    "pollingUnit": "Unit J",
+    "LGA": "Apapa",
+    "state": "Lagos",
+    "country": "Nigeria",
+    "NIN": "012345678901234",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "669f1dc770a38a6880a731ea"
+    },
+    "firstName": "Harper",
+    "lastName": "Roberts",
+    "email": "harper.roberts@example.com",
+    "phoneNumber": "07087654320",
+    "pollingUnit": "Unit K",
+    "LGA": "Ikeja",
+    "state": "Lagos",
+    "country": "Nigeria",
+    "NIN": "123456789012346",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "669f1dc770a38a6880a731eb"
+    },
+    "firstName": "Aiden",
+    "lastName": "Walker",
+    "email": "aiden.walker@example.com",
+    "phoneNumber": "08012345679",
+    "pollingUnit": "Unit L",
+    "LGA": "Lekki",
+    "state": "Lagos",
+    "country": "Nigeria",
+    "NIN": "234567890123457",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "669f1dc770a38a6880a731ec"
+    },
+    "firstName": "Ella",
+    "lastName": "Young",
+    "email": "ella.young@example.com",
+    "phoneNumber": "09087654322",
+    "pollingUnit": "Unit M",
+    "LGA": "Surulere",
+    "state": "Lagos",
+    "country": "Nigeria",
+    "NIN": "345678901234458",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "669f1dc770a38a6880a731ed"
+    },
+    "firstName": "Liam",
+    "lastName": "King",
+    "email": "liam.king@example.com",
+    "phoneNumber": "07012345681",
+    "pollingUnit": "Unit N",
+    "LGA": "Gbagada",
+    "state": "Lagos",
+    "country": "Nigeria",
+    "NIN": "456789012345459",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "669f1dc770a38a6880a731ee"
+    },
+    "firstName": "Isabella",
+    "lastName": "Scott",
+    "email": "isabella.scott@example.com",
+    "phoneNumber": "08087654322",
+    "pollingUnit": "Unit O",
+    "LGA": "Shomolu",
+    "state": "Lagos",
+    "country": "Nigeria",
+    "NIN": "567890123456460",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "669f1dc770a38a6880a731ef"
+    },
+    "firstName": "Benjamin",
+    "lastName": "Adams",
+    "email": "benjamin.adams@example.com",
+    "phoneNumber": "09098765433",
+    "pollingUnit": "Unit P",
+    "LGA": "Mushin",
+    "state": "Lagos",
+    "country": "Nigeria",
+    "NIN": "678901234567461",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "669f1dc770a38a6880a731f0"
+    },
+    "firstName": "Mia",
+    "lastName": "Baker",
+    "email": "mia.baker@example.com",
+    "phoneNumber": "07087654321",
+    "pollingUnit": "Unit Q",
+    "LGA": "Epe",
+    "state": "Lagos",
+    "country": "Nigeria",
+    "NIN": "789012345678462",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "669f1dc770a38a6880a731f1"
+    },
+    "firstName": "James",
+    "lastName": "Mitchell",
+    "email": "james.mitchell@example.com",
+    "phoneNumber": "08098765432",
+    "pollingUnit": "Unit R",
+    "LGA": "Ikorodu",
+    "state": "Lagos",
+    "country": "Nigeria",
+    "NIN": "890123456789463",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "669f1dc770a38a6880a731f2"
+    },
+    "firstName": "Sophia",
+    "lastName": "Carter",
+    "email": "sophia.carter@example.com",
+    "phoneNumber": "09087654322",
+    "pollingUnit": "Unit S",
+    "LGA": "Ikeja",
+    "state": "Lagos",
+    "country": "Nigeria",
+    "NIN": "901234567890464",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "669f1dc770a38a6880a731f3"
+    },
+    "firstName": "Logan",
+    "lastName": "Phillips",
+    "email": "logan.phillips@example.com",
+    "phoneNumber": "07098765432",
+    "pollingUnit": "Unit T",
+    "LGA": "Apapa",
+    "state": "Lagos",
+    "country": "Nigeria",
+    "NIN": "012345678901465",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "669f1dc770a38a6880a731f4"
+    },
+    "firstName": "Ava",
+    "lastName": "Evans",
+    "email": "ava.evans@example.com",
+    "phoneNumber": "08098765433",
+    "pollingUnit": "Unit U",
+    "LGA": "Lekki",
+    "state": "Lagos",
+    "country": "Nigeria",
+    "NIN": "123456789012466",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "669f1dc770a38a6880a731f5"
+    },
+    "firstName": "Lucas",
+    "lastName": "Collins",
+    "email": "lucas.collins@example.com",
+    "phoneNumber": "09087654323",
+    "pollingUnit": "Unit V",
+    "LGA": "Surulere",
+    "state": "Lagos",
+    "country": "Nigeria",
+    "NIN": "234567890123467",
+    "__v": 0
+  }
+]

@@ -1,0 +1,207 @@
+[
+  {
+    "_id": {
+      "$oid": "669efb07330a73a9eff5c016"
+    },
+    "name": "All Progressives Congress",
+    "acronym": "APC",
+    "founded": 2013,
+    "chairperson": "Abdullahi Adamu",
+    "position": "Centre",
+    "ideology": "Big tent",
+    "elected_seats": {
+      "president": 1,
+      "senate": 59,
+      "house_of_representatives": 190,
+      "governors": 20,
+      "house_of_assembly": 570,
+      "lga": 543
+    },
+    "logo_url": "https://www.inecnigeria.org/wp-content/uploads/2018/10/apclogo.jpg"
+  },
+  {
+    "_id": {
+      "$oid": "669efb07330a73a9eff5c017"
+    },
+    "name": "Peoples Democratic Party",
+    "acronym": "PDP",
+    "founded": 1998,
+    "chairperson": "Iyorchia Ayu",
+    "position": "Centre-right",
+    "ideology": ["Social conservatism", "Economic liberalism"],
+    "elected_seats": {
+      "president": 0,
+      "senate": 38,
+      "house_of_representatives": 119,
+      "governors": 13,
+      "house_of_assembly": 325,
+      "lga": 202
+    },
+    "logo_url": "https://www.inecnigeria.org/wp-content/uploads/2018/10/PDP.jpg"
+  },
+  {
+    "_id": {
+      "$oid": "669efb07330a73a9eff5c018"
+    },
+    "name": "Labour Party",
+    "acronym": "LP",
+    "founded": 2002,
+    "chairperson": "Julius Abure",
+    "position": "Centre-left",
+    "ideology": "Social democracy",
+    "elected_seats": {
+      "president": 0,
+      "senate": 8,
+      "house_of_representatives": 34,
+      "governors": 1,
+      "house_of_assembly": 26,
+      "lga": 20
+    },
+    "logo_url": "https://www.inecnigeria.org/wp-content/uploads/2018/10/LP.jpg"
+  },
+  {
+    "_id": {
+      "$oid": "669efb07330a73a9eff5c019"
+    },
+    "name": "All Progressives Grand Alliance",
+    "acronym": "APGA",
+    "founded": 2003,
+    "chairperson": "Victor Oye",
+    "position": "",
+    "ideology": [
+      "Big tent",
+      "Nationalism",
+      "Decentralization",
+      "Progressivism"
+    ],
+    "elected_seats": {
+      "president": 0,
+      "senate": 1,
+      "house_of_representatives": 4,
+      "governors": 1,
+      "house_of_assembly": 19,
+      "lga": 5
+    },
+    "logo_url": "https://www.inecnigeria.org/wp-content/uploads/2018/10/APGA.jpg"
+  },
+  {
+    "_id": {
+      "$oid": "669efb07330a73a9eff5c01a"
+    },
+    "name": "New Nigeria People's Party",
+    "acronym": "NNPP",
+    "founded": 2020,
+    "chairperson": "Rufai Ahmed Alkali",
+    "position": "Syncretic",
+    "ideology": "Third Position",
+    "elected_seats": {
+      "president": 0,
+      "senate": 2,
+      "house_of_representatives": 18,
+      "governors": 1,
+      "house_of_assembly": 26,
+      "lga": 1
+    },
+    "logo_url": "https://www.inecnigeria.org/wp-content/uploads/2018/10/NNPP.jpg"
+  },
+  {
+    "_id": {
+      "$oid": "669efb07330a73a9eff5c01b"
+    },
+    "name": "Young Progressives Party",
+    "acronym": "YPP",
+    "founded": 2017,
+    "chairperson": "Bishop Amakiri",
+    "position": "Centre-left",
+    "ideology": "Social democracy",
+    "elected_seats": {
+      "president": 0,
+      "senate": 1,
+      "house_of_representatives": 2,
+      "governors": 0,
+      "house_of_assembly": 2,
+      "lga": 0
+    },
+    "logo_url": "https://www.inecnigeria.org/wp-content/uploads/2021/04/YPP-Logo.jpeg"
+  },
+  {
+    "_id": {
+      "$oid": "669efb07330a73a9eff5c01c"
+    },
+    "name": "Social Democratic Party",
+    "acronym": "SDP",
+    "founded": 1989,
+    "chairperson": "Vacant",
+    "position": "Centre-left",
+    "ideology": "Social democracy",
+    "elected_seats": {
+      "president": 0,
+      "senate": 2,
+      "house_of_representatives": 2,
+      "governors": 0,
+      "house_of_assembly": 0,
+      "lga": 0
+    },
+    "logo_url": "https://www.inecnigeria.org/wp-content/uploads/2018/10/SDP.png"
+  },
+  {
+    "_id": {
+      "$oid": "669efb07330a73a9eff5c01d"
+    },
+    "name": "African Democratic Congress",
+    "acronym": "ADC",
+    "founded": 2005,
+    "chairperson": "Ralph Okey Nwosu",
+    "position": "",
+    "ideology": "Pan-Africanism",
+    "elected_seats": {
+      "president": 0,
+      "senate": 1,
+      "house_of_representatives": 2,
+      "governors": 0,
+      "house_of_assembly": 0,
+      "lga": 0
+    },
+    "logo_url": "https://www.inecnigeria.org/wp-content/uploads/2018/10/ADC.jpg"
+  },
+  {
+    "_id": {
+      "$oid": "669efb07330a73a9eff5c01e"
+    },
+    "name": "Zenith Labour Party",
+    "acronym": "ZLP",
+    "founded": "Unknown",
+    "chairperson": "Dan Nwanyanwu",
+    "position": "Big tent",
+    "ideology": "Reformism",
+    "elected_seats": {
+      "president": 0,
+      "senate": 0,
+      "house_of_representatives": 0,
+      "governors": 0,
+      "house_of_assembly": 2,
+      "lga": 1
+    },
+    "logo_url": "https://www.inecnigeria.org/wp-content/uploads/2018/10/ZLP.jpg"
+  },
+  {
+    "_id": {
+      "$oid": "669efb07330a73a9eff5c01f"
+    },
+    "name": "Action Democratic Party",
+    "acronym": "ADP",
+    "founded": 2017,
+    "chairperson": "Yabagi Sani",
+    "position": "Centre",
+    "ideology": "Third Way",
+    "elected_seats": {
+      "president": 0,
+      "senate": 0,
+      "house_of_representatives": 0,
+      "governors": 0,
+      "house_of_assembly": 1,
+      "lga": 2
+    },
+    "logo_url": "https://www.inecnigeria.org/wp-content/uploads/2018/10/ADP.png"
+  }
+]

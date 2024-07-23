@@ -1,0 +1,538 @@
+{
+  "voters": [
+    {
+      "firstName": "John",
+      "lastName": "Doe",
+      "email": "john.doe@example.com",
+      "phoneNumber": "08030303030",
+      "pollingUnit": "Unit A",
+      "LGA": "Ikorodu",
+      "state": "Lagos",
+      "country": "Nigeria",
+      "NIN": "12345678921"
+    },
+    {
+      "firstName": "Jane",
+      "lastName": "Smith",
+      "email": "jane.smith@example.com",
+      "phoneNumber": "0987654321",
+      "pollingUnit": "Unit B",
+      "LGA": "LGA 2",
+      "state": "Lagos",
+      "country": "Nigeria",
+      "NIN": "98765432091"
+    }
+  ],
+  "contestants": [
+    {
+      "firstName": "President",
+      "middleName": "A.",
+      "lastName": "One",
+      "party": "APC",
+      "position": "President",
+      "LGA": "LGA 1",
+      "state": "Lagos",
+      "country": "Nigeria",
+      "image": "https://i.ibb.co/8KYsSBR/shot-3.webp",
+      "partyLogo": "https://www.inecnigeria.org/wp-content/uploads/2018/10/apclogo.jpg"
+    },
+    {
+      "firstName": "President",
+      "middleName": "B.",
+      "lastName": "Two",
+      "party": "PDP",
+      "position": "President",
+      "LGA": "LGA 1",
+      "state": "Lagos",
+      "country": "Nigeria",
+      "image": "https://i.ibb.co/0tY3LYY/shot-10.webp",
+      "partyLogo": "https://www.inecnigeria.org/wp-content/uploads/2018/10/PDP.jpg"
+    },
+    {
+      "firstName": "President",
+      "middleName": "C.",
+      "lastName": "Three",
+      "party": "LP",
+      "position": "President",
+      "LGA": "LGA 1",
+      "state": "Lagos",
+      "country": "Nigeria",
+      "image": "https://i.ibb.co/Xy8vW65/shot-9.webp",
+      "partyLogo": "https://www.inecnigeria.org/wp-content/uploads/2018/10/LP.jpg"
+    },
+    {
+      "firstName": "President",
+      "middleName": "D.",
+      "lastName": "Four",
+      "party": "APGA",
+      "position": "President",
+      "LGA": "LGA 1",
+      "state": "Lagos",
+      "country": "Nigeria",
+      "image": "https://i.ibb.co/DtX6SLm/shot-8.webp",
+      "partyLogo": "https://www.inecnigeria.org/wp-content/uploads/2018/10/APGA.jpg"
+    },
+    {
+      "firstName": "President",
+      "middleName": "E.",
+      "lastName": "Five",
+      "party": "NNPP",
+      "position": "President",
+      "LGA": "LGA 1",
+      "state": "Lagos",
+      "country": "Nigeria",
+      "image": "https://i.ibb.co/4SsyQM0/shot-7.webp",
+      "partyLogo": "https://www.inecnigeria.org/wp-content/uploads/2018/10/NNPP.jpg"
+    },
+    {
+      "firstName": "President",
+      "middleName": "F.",
+      "lastName": "Six",
+      "party": "YPP",
+      "position": "President",
+      "LGA": "LGA 1",
+      "state": "Lagos",
+      "country": "Nigeria",
+      "image": "https://i.ibb.co/JvXmsVC/shot-6.webp",
+      "partyLogo": "https://www.inecnigeria.org/wp-content/uploads/2021/04/YPP-Logo.jpeg"
+    },
+    {
+      "firstName": "President",
+      "middleName": "G.",
+      "lastName": "Seven",
+      "party": "SDP",
+      "position": "President",
+      "LGA": "LGA 1",
+      "state": "Lagos",
+      "country": "Nigeria",
+      "image": "https://i.ibb.co/tB6f7GV/shot-5.webp",
+      "partyLogo": "https://www.inecnigeria.org/wp-content/uploads/2018/10/SDP.jpg"
+    },
+    {
+      "firstName": "President",
+      "middleName": "H.",
+      "lastName": "Eight",
+      "party": "ADC",
+      "position": "President",
+      "LGA": "LGA 1",
+      "state": "Lagos",
+      "country": "Nigeria",
+      "image": "https://i.ibb.co/BnKS4nc/shot-4.webp",
+      "partyLogo": "https://www.inecnigeria.org/wp-content/uploads/2018/10/ADC.jpg"
+    },
+    {
+      "firstName": "President",
+      "middleName": "I.",
+      "lastName": "Nine",
+      "party": "ZLP",
+      "position": "President",
+      "LGA": "LGA 1",
+      "state": "Lagos",
+      "country": "Nigeria",
+      "image": "https://i.ibb.co/vZww5dR/shot-2.webp",
+      "partyLogo": "https://www.inecnigeria.org/wp-content/uploads/2018/10/ZLP.jpg"
+    },
+    {
+      "firstName": "President",
+      "middleName": "J.",
+      "lastName": "Ten",
+      "party": "ADP",
+      "position": "President",
+      "LGA": "LGA 1",
+      "state": "Lagos",
+      "country": "Nigeria",
+      "image": "https://i.ibb.co/vvHm02y/shot-1.webp",
+      "partyLogo": "https://www.inecnigeria.org/wp-content/uploads/2018/10/ADP.jpg"
+    },
+
+    {
+      "firstName": "Governor",
+      "middleName": "A.",
+      "lastName": "One",
+      "party": "APC",
+      "position": "Governor",
+      "LGA": "LGA 1",
+      "state": "Lagos",
+      "country": "Nigeria",
+      "image": "https://i.ibb.co/8KYsSBR/shot-3.webp",
+      "partyLogo": "https://www.inecnigeria.org/wp-content/uploads/2018/10/apclogo.jpg"
+    },
+    {
+      "firstName": "Governor",
+      "middleName": "B.",
+      "lastName": "Two",
+      "party": "PDP",
+      "position": "Governor",
+      "LGA": "LGA 1",
+      "state": "Lagos",
+      "country": "Nigeria",
+      "image": "https://i.ibb.co/0tY3LYY/shot-10.webp",
+      "partyLogo": "https://www.inecnigeria.org/wp-content/uploads/2018/10/PDP.jpg"
+    },
+    {
+      "firstName": "Governor",
+      "middleName": "C.",
+      "lastName": "Three",
+      "party": "LP",
+      "position": "Governor",
+      "LGA": "LGA 1",
+      "state": "Lagos",
+      "country": "Nigeria",
+      "image": "https://i.ibb.co/Xy8vW65/shot-9.webp",
+      "partyLogo": "https://www.inecnigeria.org/wp-content/uploads/2018/10/LP.jpg"
+    },
+    {
+      "firstName": "Governor",
+      "middleName": "D.",
+      "lastName": "Four",
+      "party": "APGA",
+      "position": "Governor",
+      "LGA": "LGA 1",
+      "state": "Lagos",
+      "country": "Nigeria",
+      "image": "https://i.ibb.co/DtX6SLm/shot-8.webp",
+      "partyLogo": "https://www.inecnigeria.org/wp-content/uploads/2018/10/APGA.jpg"
+    },
+    {
+      "firstName": "Governor",
+      "middleName": "E.",
+      "lastName": "Five",
+      "party": "NNPP",
+      "position": "Governor",
+      "LGA": "LGA 1",
+      "state": "Lagos",
+      "country": "Nigeria",
+      "image": "https://i.ibb.co/4SsyQM0/shot-7.webp",
+      "partyLogo": "https://www.inecnigeria.org/wp-content/uploads/2018/10/NNPP.jpg"
+    },
+    {
+      "firstName": "Governor",
+      "middleName": "F.",
+      "lastName": "Six",
+      "party": "YPP",
+      "position": "Governor",
+      "LGA": "LGA 1",
+      "state": "Lagos",
+      "country": "Nigeria",
+      "image": "https://i.ibb.co/JvXmsVC/shot-6.webp",
+      "partyLogo": "https://www.inecnigeria.org/wp-content/uploads/2021/04/YPP-Logo.jpeg"
+    },
+    {
+      "firstName": "Governor",
+      "middleName": "G.",
+      "lastName": "Seven",
+      "party": "SDP",
+      "position": "Governor",
+      "LGA": "LGA 1",
+      "state": "Lagos",
+      "country": "Nigeria",
+      "image": "https://i.ibb.co/tB6f7GV/shot-5.webp",
+      "partyLogo": "https://www.inecnigeria.org/wp-content/uploads/2018/10/SDP.jpg"
+    },
+    {
+      "firstName": "Governor",
+      "middleName": "H.",
+      "lastName": "Eight",
+      "party": "ADC",
+      "position": "Governor",
+      "LGA": "LGA 1",
+      "state": "Lagos",
+      "country": "Nigeria",
+      "image": "https://i.ibb.co/BnKS4nc/shot-4.webp",
+      "partyLogo": "https://www.inecnigeria.org/wp-content/uploads/2018/10/ADC.jpg"
+    },
+    {
+      "firstName": "Governor",
+      "middleName": "I.",
+      "lastName": "Nine",
+      "party": "ZLP",
+      "position": "Governor",
+      "LGA": "LGA 1",
+      "state": "Lagos",
+      "country": "Nigeria",
+      "image": "https://i.ibb.co/vZww5dR/shot-2.webp",
+      "partyLogo": "https://www.inecnigeria.org/wp-content/uploads/2018/10/ZLP.jpg"
+    },
+    {
+      "firstName": "Governor",
+      "middleName": "J.",
+      "lastName": "Ten",
+      "party": "ADP",
+      "position": "Governor",
+      "LGA": "LGA 1",
+      "state": "Lagos",
+      "country": "Nigeria",
+      "image": "https://i.ibb.co/vvHm02y/shot-1.webp",
+      "partyLogo": "https://www.inecnigeria.org/wp-content/uploads/2018/10/ADP.jpg"
+    },
+    {
+      "firstName": "Governor",
+      "middleName": "A.",
+      "lastName": "One",
+      "party": "APC",
+      "position": "Governor",
+      "LGA": "LGA 1",
+      "state": "Rivers",
+      "country": "Nigeria",
+      "image": "https://i.ibb.co/8KYsSBR/shot-3.webp",
+      "partyLogo": "https://www.inecnigeria.org/wp-content/uploads/2018/10/apclogo.jpg"
+    },
+    {
+      "firstName": "Governor",
+      "middleName": "B.",
+      "lastName": "Two",
+      "party": "PDP",
+      "position": "Governor",
+      "LGA": "LGA 1",
+      "state": "Rivers",
+      "country": "Nigeria",
+      "image": "https://i.ibb.co/0tY3LYY/shot-10.webp",
+      "partyLogo": "https://www.inecnigeria.org/wp-content/uploads/2018/10/PDP.jpg"
+    },
+    {
+      "firstName": "Governor",
+      "middleName": "C.",
+      "lastName": "Three",
+      "party": "LP",
+      "position": "Governor",
+      "LGA": "LGA 1",
+      "state": "Rivers",
+      "country": "Nigeria",
+      "image": "https://i.ibb.co/Xy8vW65/shot-9.webp",
+      "partyLogo": "https://www.inecnigeria.org/wp-content/uploads/2018/10/LP.jpg"
+    },
+    {
+      "firstName": "Governor",
+      "middleName": "D.",
+      "lastName": "Four",
+      "party": "APGA",
+      "position": "Governor",
+      "LGA": "LGA 1",
+      "state": "Rivers",
+      "country": "Nigeria",
+      "image": "https://i.ibb.co/DtX6SLm/shot-8.webp",
+      "partyLogo": "https://www.inecnigeria.org/wp-content/uploads/2018/10/APGA.jpg"
+    },
+    {
+      "firstName": "Governor",
+      "middleName": "E.",
+      "lastName": "Five",
+      "party": "NNPP",
+      "position": "Governor",
+      "LGA": "LGA 1",
+      "state": "Rivers",
+      "country": "Nigeria",
+      "image": "https://i.ibb.co/4SsyQM0/shot-7.webp",
+      "partyLogo": "https://www.inecnigeria.org/wp-content/uploads/2018/10/NNPP.jpg"
+    },
+    {
+      "firstName": "Governor",
+      "middleName": "F.",
+      "lastName": "Six",
+      "party": "YPP",
+      "position": "Governor",
+      "LGA": "LGA 1",
+      "state": "Rivers",
+      "country": "Nigeria",
+      "image": "https://i.ibb.co/JvXmsVC/shot-6.webp",
+      "partyLogo": "https://www.inecnigeria.org/wp-content/uploads/2021/04/YPP-Logo.jpeg"
+    },
+    {
+      "firstName": "Governor",
+      "middleName": "G.",
+      "lastName": "Seven",
+      "party": "SDP",
+      "position": "Governor",
+      "LGA": "LGA 1",
+      "state": "Rivers",
+      "country": "Nigeria",
+      "image": "https://i.ibb.co/tB6f7GV/shot-5.webp",
+      "partyLogo": "https://www.inecnigeria.org/wp-content/uploads/2018/10/SDP.jpg"
+    },
+    {
+      "firstName": "Governor",
+      "middleName": "H.",
+      "lastName": "Eight",
+      "party": "ADC",
+      "position": "Governor",
+      "LGA": "LGA 1",
+      "state": "Rivers",
+      "country": "Nigeria",
+      "image": "https://i.ibb.co/BnKS4nc/shot-4.webp",
+      "partyLogo": "https://www.inecnigeria.org/wp-content/uploads/2018/10/ADC.jpg"
+    },
+    {
+      "firstName": "Governor",
+      "middleName": "I.",
+      "lastName": "Nine",
+      "party": "ZLP",
+      "position": "Governor",
+      "LGA": "LGA 1",
+      "state": "Rivers",
+      "country": "Nigeria",
+      "image": "https://i.ibb.co/vZww5dR/shot-2.webp",
+      "partyLogo": "https://www.inecnigeria.org/wp-content/uploads/2018/10/ZLP.jpg"
+    },
+    {
+      "firstName": "Governor",
+      "middleName": "J.",
+      "lastName": "Ten",
+      "party": "ADP",
+      "position": "Governor",
+      "LGA": "LGA 1",
+      "state": "Rivers",
+      "country": "Nigeria",
+      "image": "https://i.ibb.co/vvHm02y/shot-1.webp",
+      "partyLogo": "https://www.inecnigeria.org/wp-content/uploads/2018/10/ADP.jpg"
+    }
+  ],
+  "elections": [
+    {
+      "electionName": "Presidential Election 2024",
+      "electionType": "Presidential",
+      "startDate": "2024-08-01T00:00:00.000Z",
+      "endDate": "2024-08-01T23:59:59.000Z",
+      "status": "Scheduled",
+      "results": [
+        {
+          "contestantId": "669f1dc770a38a6880a731dc",
+          "votes": 0
+        },
+        {
+          "contestantId": "669f1dc770a38a6880a731dd",
+          "votes": 0
+        },
+        {
+          "contestantId": "669f1dc770a38a6880a731de",
+          "votes": 0
+        },
+        {
+          "contestantId": "669f1dc770a38a6880a731df",
+          "votes": 0
+        },
+        {
+          "contestantId": "669f1dc770a38a6880a731e0",
+          "votes": 0
+        },
+        {
+          "contestantId": "669f1dc770a38a6880a731e1",
+          "votes": 0
+        },
+        {
+          "contestantId": "669f1dc770a38a6880a731e2",
+          "votes": 0
+        },
+        {
+          "contestantId": "669f1dc770a38a6880a731e3",
+          "votes": 0
+        },
+        {
+          "contestantId": "669f1dc770a38a6880a731e4",
+          "votes": 0
+        },
+        {
+          "contestantId": "669f1dc770a38a6880a731e5",
+          "votes": 0
+        }
+      ]
+    },
+    {
+      "electionName": "Gubernatorial Election Lagos 2024",
+      "electionType": "Gubernatorial",
+      "startDate": "2024-08-01T00:00:00.000Z",
+      "endDate": "2024-08-01T23:59:59.000Z",
+      "status": "Scheduled",
+      "results": [
+        {
+          "contestantId": "669f1dc770a38a6880a731e6",
+          "votes": 0
+        },
+        {
+          "contestantId": "669f1dc770a38a6880a731e7",
+          "votes": 0
+        },
+        {
+          "contestantId": "669f1dc770a38a6880a731e8",
+          "votes": 0
+        },
+        {
+          "contestantId": "669f1dc770a38a6880a731e9",
+          "votes": 0
+        },
+        {
+          "contestantId": "669f1dc770a38a6880a731ea",
+          "votes": 0
+        },
+        {
+          "contestantId": "669f1dc770a38a6880a731eb",
+          "votes": 0
+        },
+        {
+          "contestantId": "669f1dc770a38a6880a731ec",
+          "votes": 0
+        },
+        {
+          "contestantId": "669f1dc770a38a6880a731ed",
+          "votes": 0
+        },
+        {
+          "contestantId": "669f1dc770a38a6880a731ee",
+          "votes": 0
+        },
+        {
+          "contestantId": "669f1dc770a38a6880a731ef",
+          "votes": 0
+        }
+      ]
+    },
+    {
+      "electionName": "Gubernatorial Election Rivers 2024",
+      "electionType": "Gubernatorial",
+      "startDate": "2024-08-01T00:00:00.000Z",
+      "endDate": "2024-08-01T23:59:59.000Z",
+      "status": "Scheduled",
+      "results": [
+        {
+          "contestantId": "669f1dc770a38a6880a731f0",
+          "votes": 0
+        },
+        {
+          "contestantId": "669f1dc770a38a6880a731f1",
+          "votes": 0
+        },
+        {
+          "contestantId": "669f1dc770a38a6880a731f2",
+          "votes": 0
+        },
+        {
+          "contestantId": "669f1dc770a38a6880a731f3",
+          "votes": 0
+        },
+        {
+          "contestantId": "669f1dc770a38a6880a731f4",
+          "votes": 0
+        },
+        {
+          "contestantId": "669f1dc770a38a6880a731f5",
+          "votes": 0
+        },
+        {
+          "contestantId": "669f1dc770a38a6880a731f6",
+          "votes": 0
+        },
+        {
+          "contestantId": "669f1dc770a38a6880a731f7",
+          "votes": 0
+        },
+        {
+          "contestantId": "669f1dc770a38a6880a731f8",
+          "votes": 0
+        },
+        {
+          "contestantId": "669f1dc770a38a6880a731f9",
+          "votes": 0
+        }
+      ]
+    }
+  ]
+}

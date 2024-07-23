@@ -1,0 +1,482 @@
+[
+  {
+    "_id": {
+      "$oid": "669f1dc770a38a6880a731dc"
+    },
+    "firstName": "President",
+    "middleName": "A.",
+    "lastName": "One",
+    "party": "APC",
+    "position": "President",
+    "LGA": "LGA 1",
+    "state": "Lagos",
+    "country": "Nigeria",
+    "image": "https://i.ibb.co/8KYsSBR/shot-3.webp",
+    "partyLogo": "https://www.inecnigeria.org/wp-content/uploads/2018/10/apclogo.jpg",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "669f1dc770a38a6880a731dd"
+    },
+    "firstName": "President",
+    "middleName": "B.",
+    "lastName": "Two",
+    "party": "PDP",
+    "position": "President",
+    "LGA": "LGA 1",
+    "state": "Lagos",
+    "country": "Nigeria",
+    "image": "https://i.ibb.co/0tY3LYY/shot-10.webp",
+    "partyLogo": "https://www.inecnigeria.org/wp-content/uploads/2018/10/PDP.jpg",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "669f1dc770a38a6880a731de"
+    },
+    "firstName": "President",
+    "middleName": "C.",
+    "lastName": "Three",
+    "party": "LP",
+    "position": "President",
+    "LGA": "LGA 1",
+    "state": "Lagos",
+    "country": "Nigeria",
+    "image": "https://i.ibb.co/Xy8vW65/shot-9.webp",
+    "partyLogo": "https://www.inecnigeria.org/wp-content/uploads/2018/10/LP.jpg",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "669f1dc770a38a6880a731df"
+    },
+    "firstName": "President",
+    "middleName": "D.",
+    "lastName": "Four",
+    "party": "APGA",
+    "position": "President",
+    "LGA": "LGA 1",
+    "state": "Lagos",
+    "country": "Nigeria",
+    "image": "https://i.ibb.co/DtX6SLm/shot-8.webp",
+    "partyLogo": "https://www.inecnigeria.org/wp-content/uploads/2018/10/APGA.jpg",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "669f1dc770a38a6880a731e0"
+    },
+    "firstName": "President",
+    "middleName": "E.",
+    "lastName": "Five",
+    "party": "NNPP",
+    "position": "President",
+    "LGA": "LGA 1",
+    "state": "Lagos",
+    "country": "Nigeria",
+    "image": "https://i.ibb.co/4SsyQM0/shot-7.webp",
+    "partyLogo": "https://www.inecnigeria.org/wp-content/uploads/2018/10/NNPP.jpg",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "669f1dc770a38a6880a731e1"
+    },
+    "firstName": "President",
+    "middleName": "F.",
+    "lastName": "Six",
+    "party": "YPP",
+    "position": "President",
+    "LGA": "LGA 1",
+    "state": "Lagos",
+    "country": "Nigeria",
+    "image": "https://i.ibb.co/JvXmsVC/shot-6.webp",
+    "partyLogo": "https://www.inecnigeria.org/wp-content/uploads/2021/04/YPP-Logo.jpeg",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "669f1dc770a38a6880a731e2"
+    },
+    "firstName": "President",
+    "middleName": "G.",
+    "lastName": "Seven",
+    "party": "SDP",
+    "position": "President",
+    "LGA": "LGA 1",
+    "state": "Lagos",
+    "country": "Nigeria",
+    "image": "https://i.ibb.co/tB6f7GV/shot-5.webp",
+    "partyLogo": "https://www.inecnigeria.org/wp-content/uploads/2018/10/SDP.jpg",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "669f1dc770a38a6880a731e3"
+    },
+    "firstName": "President",
+    "middleName": "H.",
+    "lastName": "Eight",
+    "party": "ADC",
+    "position": "President",
+    "LGA": "LGA 1",
+    "state": "Lagos",
+    "country": "Nigeria",
+    "image": "https://i.ibb.co/BnKS4nc/shot-4.webp",
+    "partyLogo": "https://www.inecnigeria.org/wp-content/uploads/2018/10/ADC.jpg",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "669f1dc770a38a6880a731e4"
+    },
+    "firstName": "President",
+    "middleName": "I.",
+    "lastName": "Nine",
+    "party": "ZLP",
+    "position": "President",
+    "LGA": "LGA 1",
+    "state": "Lagos",
+    "country": "Nigeria",
+    "image": "https://i.ibb.co/vZww5dR/shot-2.webp",
+    "partyLogo": "https://www.inecnigeria.org/wp-content/uploads/2018/10/ZLP.jpg",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "669f1dc770a38a6880a731e5"
+    },
+    "firstName": "President",
+    "middleName": "J.",
+    "lastName": "Ten",
+    "party": "ADP",
+    "position": "President",
+    "LGA": "LGA 1",
+    "state": "Lagos",
+    "country": "Nigeria",
+    "image": "https://i.ibb.co/vvHm02y/shot-1.webp",
+    "partyLogo": "https://www.inecnigeria.org/wp-content/uploads/2018/10/ADP.jpg",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "669f1dc770a38a6880a731e6"
+    },
+    "firstName": "Governor",
+    "middleName": "A.",
+    "lastName": "One",
+    "party": "APC",
+    "position": "Governor",
+    "LGA": "LGA 1",
+    "state": "Lagos",
+    "country": "Nigeria",
+    "image": "https://i.ibb.co/8KYsSBR/shot-3.webp",
+    "partyLogo": "https://www.inecnigeria.org/wp-content/uploads/2018/10/apclogo.jpg",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "669f1dc770a38a6880a731e7"
+    },
+    "firstName": "Governor",
+    "middleName": "B.",
+    "lastName": "Two",
+    "party": "PDP",
+    "position": "Governor",
+    "LGA": "LGA 1",
+    "state": "Lagos",
+    "country": "Nigeria",
+    "image": "https://i.ibb.co/0tY3LYY/shot-10.webp",
+    "partyLogo": "https://www.inecnigeria.org/wp-content/uploads/2018/10/PDP.jpg",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "669f1dc770a38a6880a731e8"
+    },
+    "firstName": "Governor",
+    "middleName": "C.",
+    "lastName": "Three",
+    "party": "LP",
+    "position": "Governor",
+    "LGA": "LGA 1",
+    "state": "Lagos",
+    "country": "Nigeria",
+    "image": "https://i.ibb.co/Xy8vW65/shot-9.webp",
+    "partyLogo": "https://www.inecnigeria.org/wp-content/uploads/2018/10/LP.jpg",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "669f1dc770a38a6880a731e9"
+    },
+    "firstName": "Governor",
+    "middleName": "D.",
+    "lastName": "Four",
+    "party": "APGA",
+    "position": "Governor",
+    "LGA": "LGA 1",
+    "state": "Lagos",
+    "country": "Nigeria",
+    "image": "https://i.ibb.co/DtX6SLm/shot-8.webp",
+    "partyLogo": "https://www.inecnigeria.org/wp-content/uploads/2018/10/APGA.jpg",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "669f1dc770a38a6880a731ea"
+    },
+    "firstName": "Governor",
+    "middleName": "E.",
+    "lastName": "Five",
+    "party": "NNPP",
+    "position": "Governor",
+    "LGA": "LGA 1",
+    "state": "Lagos",
+    "country": "Nigeria",
+    "image": "https://i.ibb.co/4SsyQM0/shot-7.webp",
+    "partyLogo": "https://www.inecnigeria.org/wp-content/uploads/2018/10/NNPP.jpg",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "669f1dc770a38a6880a731eb"
+    },
+    "firstName": "Governor",
+    "middleName": "F.",
+    "lastName": "Six",
+    "party": "YPP",
+    "position": "Governor",
+    "LGA": "LGA 1",
+    "state": "Lagos",
+    "country": "Nigeria",
+    "image": "https://i.ibb.co/JvXmsVC/shot-6.webp",
+    "partyLogo": "https://www.inecnigeria.org/wp-content/uploads/2021/04/YPP-Logo.jpeg",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "669f1dc770a38a6880a731ec"
+    },
+    "firstName": "Governor",
+    "middleName": "G.",
+    "lastName": "Seven",
+    "party": "SDP",
+    "position": "Governor",
+    "LGA": "LGA 1",
+    "state": "Lagos",
+    "country": "Nigeria",
+    "image": "https://i.ibb.co/tB6f7GV/shot-5.webp",
+    "partyLogo": "https://www.inecnigeria.org/wp-content/uploads/2018/10/SDP.jpg",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "669f1dc770a38a6880a731ed"
+    },
+    "firstName": "Governor",
+    "middleName": "H.",
+    "lastName": "Eight",
+    "party": "ADC",
+    "position": "Governor",
+    "LGA": "LGA 1",
+    "state": "Lagos",
+    "country": "Nigeria",
+    "image": "https://i.ibb.co/BnKS4nc/shot-4.webp",
+    "partyLogo": "https://www.inecnigeria.org/wp-content/uploads/2018/10/ADC.jpg",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "669f1dc770a38a6880a731ee"
+    },
+    "firstName": "Governor",
+    "middleName": "I.",
+    "lastName": "Nine",
+    "party": "ZLP",
+    "position": "Governor",
+    "LGA": "LGA 1",
+    "state": "Lagos",
+    "country": "Nigeria",
+    "image": "https://i.ibb.co/vZww5dR/shot-2.webp",
+    "partyLogo": "https://www.inecnigeria.org/wp-content/uploads/2018/10/ZLP.jpg",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "669f1dc770a38a6880a731ef"
+    },
+    "firstName": "Governor",
+    "middleName": "J.",
+    "lastName": "Ten",
+    "party": "ADP",
+    "position": "Governor",
+    "LGA": "LGA 1",
+    "state": "Lagos",
+    "country": "Nigeria",
+    "image": "https://i.ibb.co/vvHm02y/shot-1.webp",
+    "partyLogo": "https://www.inecnigeria.org/wp-content/uploads/2018/10/ADP.jpg",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "669f1dc770a38a6880a731f0"
+    },
+    "firstName": "Governor",
+    "middleName": "A.",
+    "lastName": "One",
+    "party": "APC",
+    "position": "Governor",
+    "LGA": "LGA 1",
+    "state": "Rivers",
+    "country": "Nigeria",
+    "image": "https://i.ibb.co/8KYsSBR/shot-3.webp",
+    "partyLogo": "https://www.inecnigeria.org/wp-content/uploads/2018/10/apclogo.jpg",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "669f1dc770a38a6880a731f1"
+    },
+    "firstName": "Governor",
+    "middleName": "B.",
+    "lastName": "Two",
+    "party": "PDP",
+    "position": "Governor",
+    "LGA": "LGA 1",
+    "state": "Rivers",
+    "country": "Nigeria",
+    "image": "https://i.ibb.co/0tY3LYY/shot-10.webp",
+    "partyLogo": "https://www.inecnigeria.org/wp-content/uploads/2018/10/PDP.jpg",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "669f1dc770a38a6880a731f2"
+    },
+    "firstName": "Governor",
+    "middleName": "C.",
+    "lastName": "Three",
+    "party": "LP",
+    "position": "Governor",
+    "LGA": "LGA 1",
+    "state": "Rivers",
+    "country": "Nigeria",
+    "image": "https://i.ibb.co/Xy8vW65/shot-9.webp",
+    "partyLogo": "https://www.inecnigeria.org/wp-content/uploads/2018/10/LP.jpg",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "669f1dc770a38a6880a731f3"
+    },
+    "firstName": "Governor",
+    "middleName": "D.",
+    "lastName": "Four",
+    "party": "APGA",
+    "position": "Governor",
+    "LGA": "LGA 1",
+    "state": "Rivers",
+    "country": "Nigeria",
+    "image": "https://i.ibb.co/DtX6SLm/shot-8.webp",
+    "partyLogo": "https://www.inecnigeria.org/wp-content/uploads/2018/10/APGA.jpg",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "669f1dc770a38a6880a731f4"
+    },
+    "firstName": "Governor",
+    "middleName": "E.",
+    "lastName": "Five",
+    "party": "NNPP",
+    "position": "Governor",
+    "LGA": "LGA 1",
+    "state": "Rivers",
+    "country": "Nigeria",
+    "image": "https://i.ibb.co/4SsyQM0/shot-7.webp",
+    "partyLogo": "https://www.inecnigeria.org/wp-content/uploads/2018/10/NNPP.jpg",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "669f1dc770a38a6880a731f5"
+    },
+    "firstName": "Governor",
+    "middleName": "F.",
+    "lastName": "Six",
+    "party": "YPP",
+    "position": "Governor",
+    "LGA": "LGA 1",
+    "state": "Rivers",
+    "country": "Nigeria",
+    "image": "https://i.ibb.co/JvXmsVC/shot-6.webp",
+    "partyLogo": "https://www.inecnigeria.org/wp-content/uploads/2021/04/YPP-Logo.jpeg",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "669f1dc770a38a6880a731f6"
+    },
+    "firstName": "Governor",
+    "middleName": "G.",
+    "lastName": "Seven",
+    "party": "SDP",
+    "position": "Governor",
+    "LGA": "LGA 1",
+    "state": "Rivers",
+    "country": "Nigeria",
+    "image": "https://i.ibb.co/tB6f7GV/shot-5.webp",
+    "partyLogo": "https://www.inecnigeria.org/wp-content/uploads/2018/10/SDP.jpg",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "669f1dc770a38a6880a731f7"
+    },
+    "firstName": "Governor",
+    "middleName": "H.",
+    "lastName": "Eight",
+    "party": "ADC",
+    "position": "Governor",
+    "LGA": "LGA 1",
+    "state": "Rivers",
+    "country": "Nigeria",
+    "image": "https://i.ibb.co/BnKS4nc/shot-4.webp",
+    "partyLogo": "https://www.inecnigeria.org/wp-content/uploads/2018/10/ADC.jpg",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "669f1dc770a38a6880a731f8"
+    },
+    "firstName": "Governor",
+    "middleName": "I.",
+    "lastName": "Nine",
+    "party": "ZLP",
+    "position": "Governor",
+    "LGA": "LGA 1",
+    "state": "Rivers",
+    "country": "Nigeria",
+    "image": "https://i.ibb.co/vZww5dR/shot-2.webp",
+    "partyLogo": "https://www.inecnigeria.org/wp-content/uploads/2018/10/ZLP.jpg",
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "669f1dc770a38a6880a731f9"
+    },
+    "firstName": "Governor",
+    "middleName": "J.",
+    "lastName": "Ten",
+    "party": "ADP",
+    "position": "Governor",
+    "LGA": "LGA 1",
+    "state": "Rivers",
+    "country": "Nigeria",
+    "image": "https://i.ibb.co/vvHm02y/shot-1.webp",
+    "partyLogo": "https://www.inecnigeria.org/wp-content/uploads/2018/10/ADP.jpg",
+    "__v": 0
+  }
+]

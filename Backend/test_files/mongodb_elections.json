@@ -1,0 +1,156 @@
+[{
+  "_id": {
+    "$oid": "669f1f48330a73a9eff5c034"
+  },
+  "electionName": "Presidential Election 2024",
+  "electionType": "Presidential",
+  "startDate": "2024-08-01T00:00:00.000Z",
+  "endDate": "2024-08-01T23:59:59.000Z",
+  "status": "Scheduled",
+  "results": [
+    {
+      "contestantId": "669f1dc770a38a6880a731dc",
+      "votes": 0
+    },
+    {
+      "contestantId": "669f1dc770a38a6880a731dd",
+      "votes": 0
+    },
+    {
+      "contestantId": "669f1dc770a38a6880a731de",
+      "votes": 0
+    },
+    {
+      "contestantId": "669f1dc770a38a6880a731df",
+      "votes": 0
+    },
+    {
+      "contestantId": "669f1dc770a38a6880a731e0",
+      "votes": 0
+    },
+    {
+      "contestantId": "669f1dc770a38a6880a731e1",
+      "votes": 0
+    },
+    {
+      "contestantId": "669f1dc770a38a6880a731e2",
+      "votes": 0
+    },
+    {
+      "contestantId": "669f1dc770a38a6880a731e3",
+      "votes": 0
+    },
+    {
+      "contestantId": "669f1dc770a38a6880a731e4",
+      "votes": 0
+    },
+    {
+      "contestantId": "669f1dc770a38a6880a731e5",
+      "votes": 0
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "669f1f48330a73a9eff5c035"
+  },
+  "electionName": "Gubernatorial Election Lagos 2024",
+  "electionType": "Gubernatorial",
+  "startDate": "2024-08-01T00:00:00.000Z",
+  "endDate": "2024-08-01T23:59:59.000Z",
+  "status": "Scheduled",
+  "results": [
+    {
+      "contestantId": "669f1dc770a38a6880a731e6",
+      "votes": 0
+    },
+    {
+      "contestantId": "669f1dc770a38a6880a731e7",
+      "votes": 0
+    },
+    {
+      "contestantId": "669f1dc770a38a6880a731e8",
+      "votes": 0
+    },
+    {
+      "contestantId": "669f1dc770a38a6880a731e9",
+      "votes": 0
+    },
+    {
+      "contestantId": "669f1dc770a38a6880a731ea",
+      "votes": 0
+    },
+    {
+      "contestantId": "669f1dc770a38a6880a731eb",
+      "votes": 0
+    },
+    {
+      "contestantId": "669f1dc770a38a6880a731ec",
+      "votes": 0
+    },
+    {
+      "contestantId": "669f1dc770a38a6880a731ed",
+      "votes": 0
+    },
+    {
+      "contestantId": "669f1dc770a38a6880a731ee",
+      "votes": 0
+    },
+    {
+      "contestantId": "669f1dc770a38a6880a731ef",
+      "votes": 0
+    }
+  ]
+},
+{
+  "_id": {
+    "$oid": "669f1f48330a73a9eff5c036"
+  },
+  "electionName": "Gubernatorial Election Rivers 2024",
+  "electionType": "Gubernatorial",
+  "startDate": "2024-08-01T00:00:00.000Z",
+  "endDate": "2024-08-01T23:59:59.000Z",
+  "status": "Scheduled",
+  "results": [
+    {
+      "contestantId": "669f1dc770a38a6880a731f0",
+      "votes": 0
+    },
+    {
+      "contestantId": "669f1dc770a38a6880a731f1",
+      "votes": 0
+    },
+    {
+      "contestantId": "669f1dc770a38a6880a731f2",
+      "votes": 0
+    },
+    {
+      "contestantId": "669f1dc770a38a6880a731f3",
+      "votes": 0
+    },
+    {
+      "contestantId": "669f1dc770a38a6880a731f4",
+      "votes": 0
+    },
+    {
+      "contestantId": "669f1dc770a38a6880a731f5",
+      "votes": 0
+    },
+    {
+      "contestantId": "669f1dc770a38a6880a731f6",
+      "votes": 0
+    },
+    {
+      "contestantId": "669f1dc770a38a6880a731f7",
+      "votes": 0
+    },
+    {
+      "contestantId": "669f1dc770a38a6880a731f8",
+      "votes": 0
+    },
+    {
+      "contestantId": "669f1dc770a38a6880a731f9",
+      "votes": 0
+    }
+  ]
+}]
