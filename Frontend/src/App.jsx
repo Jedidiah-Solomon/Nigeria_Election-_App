@@ -1,12 +1,25 @@
 import React from "react";
-import "./assets/styles/style.css";
+import { Route, Routes } from "react-router-dom";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
+import Homepage from "./components/Homepage";
+import Elections from "./components/Elections";
+import Candidates from "./components/Candidates";
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <h1 className="text-2xl font-bold">Hello, Nigeria Election App!</h1>
+    <div className="flex flex-col min-h-screen">
+      <Header />
+      <div className="flex-grow">
+        <Routes>
+          <Route path="/" element={<Homepage />} />
+          <Route path="/elections" element={<Elections />} />
+          <Route path="/candidates" element={<Candidates />} />
+        </Routes>
+      </div>
+      <Footer />
     </div>
   );
-}
+};
 
 export default App;
