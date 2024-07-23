@@ -14,11 +14,13 @@ const Header = () => {
     <header className="bg-customGreen-dark text-white p-4">
       <div className="container mx-auto flex items-center justify-between">
         <div className="flex items-center">
-          <img
-            src={logo}
-            alt="Nigeria Election App Logo"
-            className="h-10 mr-4"
-          />
+          <Link to="/">
+            <img
+              src={logo}
+              alt="Nigeria Election App Logo"
+              className="h-10 mr-4"
+            />
+          </Link>
           <h1 className="mobile-header-title tablet-header-title laptop-header-title desktop-header-title">
             Nigeria Election App
           </h1>

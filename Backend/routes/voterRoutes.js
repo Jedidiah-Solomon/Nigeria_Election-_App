@@ -2,7 +2,8 @@ const express = require("express");
 const router = express.Router();
 const voterController = require("../controllers/voterController");
 
-router.post("/voters", voterController.createVoter);
-router.get("/voters", voterController.getVoters);
+router.post("/", voterController.createVoter);
+router.get("/", voterController.getVoters);
+router.get("/count", voterController.getVoterCount);
 
 module.exports = router;

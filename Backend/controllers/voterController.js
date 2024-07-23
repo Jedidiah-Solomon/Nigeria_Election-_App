@@ -20,3 +20,13 @@ exports.getVoters = async (req, res) => {
     res.status(500).json({ message: error.message });
   }
 };
+
+// Get the count of voters
+exports.getVoterCount = async (req, res) => {
+  try {
+    const count = await Voter.countDocuments();
+    res.status(200).json({ count });
+  } catch (error) {
+    res.status(500).json({ message: error.message });
+  }
+};
