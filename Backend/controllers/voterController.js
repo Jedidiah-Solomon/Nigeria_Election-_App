@@ -30,3 +30,78 @@ exports.getVoterCount = async (req, res) => {
     res.status(500).json({ message: error.message });
   }
 };
+
+// Update a voter
+exports.updateVoter = async (req, res) => {
+  try {
+    const { id } = req.params;
+    const updates = req.body;
+    const options = { new: true, runValidators: true };
+    const voter = await Voter.findByIdAndUpdate(id, updates, options);
+
+    if (!voter) {
+      return res.status(404).json({ message: "Voter not found" });
+    }
+
+    res.status(200).json(voter);
+  } catch (error) {
+    res.status(400).json({ message: error.message });
+  }
+};
+
+// Get a voter by ID
+exports.getVoterById = async (req, res) => {
+  try {
+    const { id } = req.params;
+    const voter = await Voter.findById(id);
+    if (!voter) {
+      return res.status(404).json({ message: "Voter not found" });
+    }
+    res.status(200).json(voter);
+  } catch (error) {
+    res.status(500).json({ message: error.message });
+  }
+};
+
+// Delete a voter
+exports.deleteVoter = async (req, res) => {
+  try {
+    const { id } = req.params;
+    const voter = await Voter.findByIdAndDelete(id);
+
+    if (!voter) {
+      return res.status(404).json({ message: "Voter not found" });
+    }
+
+    res.status(200).json({ message: "Voter deleted successfully" });
+  } catch (error) {
+    res.status(500).json({ message: error.message });
+  }
+};
+
+// Search voters by query parameters
+exports.searchVoter = async (req, res) => {
+  try {
+    const { firstName, email, NIN } = req.query;
+
+    // Build query object dynamically
+    const query = {};
+    if (firstName) query.firstName = firstName;
+    if (email) query.email = email;
+    if (NIN) query.NIN = NIN;
+
+    // Perform the search
+    const voter = await Voter.findOne(query);
+
+    if (!voter) {
+      return res.status(404).json({ message: "Voter not found" });
+    }
+
+    res.status(200).json(voter);
+  } catch (error) {
+    console.error("Error searching for voter:", error);
+    res
+      .status(500)
+      .json({ message: "Server error occurred while searching for voter" });
+  }
+};

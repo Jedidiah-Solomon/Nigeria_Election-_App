@@ -30,3 +30,9 @@ totalGovernors;
 
 // // Print the result
 // totalChairperson;
+
+db.voters.find({
+  firstName: "Olivia",
+  email: "olivia.johnson@example.com",
+  NIN: "234567890123456",
+});

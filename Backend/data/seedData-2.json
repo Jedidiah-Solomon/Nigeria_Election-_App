@@ -1,0 +1,25 @@
+{
+  "admins": [
+    {
+      "firstName": "John",
+      "lastName": "Doe",
+      "email": "john.doe@example.com",
+      "password": "JohnDoe1234%",
+      "position": "Editor"
+    },
+    {
+      "firstName": "Aisha",
+      "lastName": "Mohammed",
+      "email": "aisha.mohammed@example.com",
+      "password": "Password0000#",
+      "position": "Admin"
+    },
+    {
+      "firstName": "Jedidiah",
+      "lastName": "Solomon",
+      "email": "jedidiah@gmail.com",
+      "password": "Password1234$",
+      "position": "Super Admin"
+    }
+  ]
+}

@@ -35,6 +35,12 @@ const Header = () => {
           <Link to="/candidates" className="hover:underline">
             Candidates
           </Link>
+          <Link to="/parties" className="hover:underline">
+            Parties
+          </Link>
+          <Link to="/admin-login" className="hover:underline">
+            Admin
+          </Link>
         </nav>
         <button
           className="laptop:hidden text-2xl focus:outline-none"
@@ -53,6 +59,12 @@ const Header = () => {
           </Link>
           <Link to="/candidates" className="block py-2 hover:underline">
             Candidates
+          </Link>
+          <Link to="/parties" className="block py-2 hover:underline">
+            Parties
+          </Link>
+          <Link to="/admin-login" className="block py-2 hover:underline">
+            Admin
           </Link>
         </nav>
       )}
