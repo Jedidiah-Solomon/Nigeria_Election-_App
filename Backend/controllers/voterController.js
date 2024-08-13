@@ -80,6 +80,7 @@ exports.deleteVoter = async (req, res) => {
 };
 
 // Search voters by query parameters
+// Search voters by query parameters
 exports.searchVoter = async (req, res) => {
   try {
     const { firstName, email, NIN } = req.query;
@@ -90,8 +91,10 @@ exports.searchVoter = async (req, res) => {
     if (email) query.email = email;
     if (NIN) query.NIN = NIN;
 
+    console.log("Query Object:", query);
+
     // Perform the search
-    const voter = await Voter.findOne(query);
+    const voter = await Voter.findOne(query).exec();
 
     if (!voter) {
       return res.status(404).json({ message: "Voter not found" });
@@ -99,7 +102,7 @@ exports.searchVoter = async (req, res) => {
 
     res.status(200).json(voter);
   } catch (error) {
-    console.error("Error searching for voter:", error);
+    console.error("Error searching for voter:", error.message); // Improved logging
     res
       .status(500)
       .json({ message: "Server error occurred while searching for voter" });
