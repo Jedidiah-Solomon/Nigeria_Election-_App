@@ -1,27 +1,38 @@
-const { expressjwt: expressJwt } = require("express-jwt");
+require("dotenv").config();
+const Admin = require("../models/adminModel");
 
-const SECRET_KEY = process.env.JWT_SECRET;
+// Middleware to check if the user is an admin
+const requireAdmin = async (req, res, next) => {
+  try {
+    // Extract firstName from session
+    const firstName = req.session?.firstName;
 
-// Debugging the secret key
-console.log("JWT_SECRET:", SECRET_KEY);
+    if (!firstName) {
+      return res
+        .status(401)
+        .json({ message: "Unauthorized: No firstName in session" });
+    }
 
-const requireAuth = expressJwt({
-  secret: SECRET_KEY,
-  algorithms: ["HS256"],
-  requestProperty: "auth",
-  getToken: (req) => {
-    const token = req.cookies.jwt;
-    console.log("JWT token:", token);
-    return token;
-  },
-});
+    // Find the admin by firstName
+    const admin = await Admin.findOne({ firstName });
 
-const requireAdmin = (req, res, next) => {
-  if (req.auth && req.auth.position === "admin") {
-    next();
-  } else {
-    res.status(403).json({ message: "Forbidden: Admins only" });
+    if (!admin) {
+      return res.status(401).json({ message: "Unauthorized: Admin not found" });
+    }
+
+    // Attach admin data to the request object
+    req.admin = admin;
+
+    // Check if the admin has the appropriate role
+    if (req.admin.position !== "admin") {
+      return res.status(403).json({ message: "Forbidden: Admins only" });
+    }
+
+    next(); // Proceed to the next middleware or route handler
+  } catch (err) {
+    console.error("Authorization error:", err);
+    res.status(401).json({ message: "Unauthorized: Authentication error" });
   }
 };
 
-module.exports = { requireAuth, requireAdmin };
+module.exports = { requireAdmin };

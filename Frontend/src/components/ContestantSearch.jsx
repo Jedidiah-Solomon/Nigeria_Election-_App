@@ -2,13 +2,14 @@ import React, { useState } from "react";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
 
-const VoterSearch = () => {
+const ContestantSearch = () => {
   const [searchParams, setSearchParams] = useState({
     firstName: "",
-    email: "",
-    NIN: "",
+    lastName: "",
+    party: "",
+    position: "",
   });
-  const [voter, setVoter] = useState(null);
+  const [contestant, setContestant] = useState(null);
   const navigate = useNavigate();
 
   const handleChange = (e) => {
@@ -20,18 +21,18 @@ const VoterSearch = () => {
     e.preventDefault();
     try {
       const response = await axios.get(
-        `${import.meta.env.VITE_BACKEND_URL}/api/voters/search`,
+        `${import.meta.env.VITE_BACKEND_URL}/api/contestants/search`,
         { params: searchParams }
       );
       if (response.data) {
-        setVoter(response.data);
-        navigate(`/admin/update-voter/${response.data._id}`);
+        setContestant(response.data);
+        navigate(`/admin/update-contestant/${response.data._id}`);
       } else {
-        alert("No voter found with these details.");
+        alert("No contestant found with these details.");
       }
     } catch (error) {
-      console.error("Error searching for voter:", error);
-      alert("Error searching for voter. Check console for details.");
+      console.error("Error searching for contestant:", error);
+      alert("Error searching for contestant. Check console for details.");
     }
   };
 
@@ -39,7 +40,7 @@ const VoterSearch = () => {
     <div className="flex items-center justify-center min-h-screen bg-gray-100">
       <div className="w-full max-w-lg bg-white p-8 rounded-lg shadow-lg">
         <h4 className="text-2xl font-semibold text-center mb-6">
-          Search for Voter to Update
+          Search for Contestant to Update
         </h4>
         <form onSubmit={handleSearch} className="space-y-4">
           <input
@@ -49,22 +50,30 @@ const VoterSearch = () => {
             value={searchParams.firstName}
             onChange={handleChange}
             className="border p-3 w-full rounded-lg"
-            required
           />
           <input
-            type="email"
-            name="email"
-            placeholder="Email"
-            value={searchParams.email}
+            type="text"
+            name="lastName"
+            placeholder="Last Name"
+            value={searchParams.lastName}
             onChange={handleChange}
             className="border p-3 w-full rounded-lg"
             required
           />
           <input
             type="text"
-            name="NIN"
-            placeholder="NIN"
-            value={searchParams.NIN}
+            name="party"
+            placeholder="Party"
+            value={searchParams.party}
+            onChange={handleChange}
+            className="border p-3 w-full rounded-lg"
+            required
+          />
+          <input
+            type="text"
+            name="position"
+            placeholder="Position"
+            value={searchParams.position}
             onChange={handleChange}
             className="border p-3 w-full rounded-lg"
             required
@@ -81,4 +90,4 @@ const VoterSearch = () => {
   );
 };
 
-export default VoterSearch;
+export default ContestantSearch;

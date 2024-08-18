@@ -15,6 +15,9 @@ import AddVoter from "./components/AddVoter";
 import UpdateVoter from "./components/UpdateVoter";
 import DeleteVoter from "./components/DeleteVoter";
 import VoterSearch from "./components/VoterSearch";
+import VoterSearchDelete from "./components/VoterSearchDelete";
+import ContestantSearch from "./components/ContestantSearch";
+import ContestantSearchDelete from "./components/ContestantSearchDelete";
 
 const App = () => {
   return (
@@ -37,10 +40,22 @@ const App = () => {
             path="/admin/delete-contestant/:id"
             element={<DeleteContestant />}
           />
+          <Route
+            path="/admin/search-contestant"
+            element={<ContestantSearch />}
+          />
+          <Route
+            path="/admin/search-contestant-delete"
+            element={<ContestantSearchDelete />}
+          />
           <Route path="/admin/add-voter" element={<AddVoter />} />
           <Route path="/admin/update-voter/:id" element={<UpdateVoter />} />
           <Route path="/admin/delete-voter/:id" element={<DeleteVoter />} />
           <Route path="/admin/search-voter" element={<VoterSearch />} />
+          <Route
+            path="/admin/search-voter-delete"
+            element={<VoterSearchDelete />}
+          />
         </Routes>
       </div>
       <Footer />

@@ -41,7 +41,7 @@ const AdminPage = () => {
             </li>
             <li>
               <Link
-                to="/admin/update-contestant"
+                to="/admin/search-contestant"
                 className="block px-4 py-2 bg-customGreen-dark text-white rounded hover:bg-customGreen-medium"
               >
                 Update Contestant
@@ -49,7 +49,7 @@ const AdminPage = () => {
             </li>
             <li>
               <Link
-                to="/admin/delete-contestant"
+                to="/admin/search-contestant-delete"
                 className="block px-4 py-2 bg-customGreen-dark text-white rounded hover:bg-customGreen-medium"
               >
                 Delete Contestant
@@ -80,7 +80,7 @@ const AdminPage = () => {
             </li>
             <li>
               <Link
-                to="/admin/delete-voter"
+                to="/admin/search-voter-delete"
                 className="block px-4 py-2 bg-customGreen-dark text-white rounded hover:bg-customGreen-medium"
               >
                 Delete Voter

@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
 
-const VoterSearch = () => {
+const VoterSearchDelete = () => {
   const [searchParams, setSearchParams] = useState({
     firstName: "",
     email: "",
@@ -25,7 +25,7 @@ const VoterSearch = () => {
       );
       if (response.data) {
         setVoter(response.data);
-        navigate(`/admin/update-voter/${response.data._id}`);
+        navigate(`/admin/delete-voter/${response.data._id}`);
       } else {
         alert("No voter found with these details.");
       }
@@ -39,7 +39,7 @@ const VoterSearch = () => {
     <div className="flex items-center justify-center min-h-screen bg-gray-100">
       <div className="w-full max-w-lg bg-white p-8 rounded-lg shadow-lg">
         <h4 className="text-2xl font-semibold text-center mb-6">
-          Search for Voter to Update
+          Search for Voter to Delete
         </h4>
         <form onSubmit={handleSearch} className="space-y-4">
           <input
@@ -81,4 +81,4 @@ const VoterSearch = () => {
   );
 };
 
-export default VoterSearch;
+export default VoterSearchDelete;

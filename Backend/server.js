@@ -7,7 +7,7 @@ const MongoStore = require("connect-mongo");
 const path = require("path");
 const morgan = require("morgan");
 const cors = require("cors");
-const { requireAuth, requireAdmin } = require("./middleware/authMiddleware");
+const { requireAdmin } = require("./middleware/authMiddleware");
 
 const connectDB = require("./config/db");
 

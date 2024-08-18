@@ -5,8 +5,10 @@ exports.createVoter = async (req, res) => {
   try {
     const voter = new Voter(req.body);
     await voter.save();
+    console.log(req.body);
     res.status(201).json(voter);
   } catch (error) {
+    console.log("Error:", error);
     res.status(400).json({ message: error.message });
   }
 };
@@ -79,7 +81,6 @@ exports.deleteVoter = async (req, res) => {
   }
 };
 
-// Search voters by query parameters
 // Search voters by query parameters
 exports.searchVoter = async (req, res) => {
   try {

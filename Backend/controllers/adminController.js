@@ -89,6 +89,10 @@ exports.loginAdmin = async (req, res) => {
       maxAge: 3600000, // 1 hour in milliseconds
     });
 
+    // Set session data
+    req.session.firstName = admin.firstName;
+    console.log("Session after setting firstName:", req.session);
+
     // Send the firstName and other necessary data in the response
     res.status(200).json({
       message: "Login successful",

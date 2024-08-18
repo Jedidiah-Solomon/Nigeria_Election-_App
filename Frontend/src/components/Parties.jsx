@@ -7,7 +7,9 @@ const Parties = () => {
   useEffect(() => {
     const fetchParties = async () => {
       try {
-        const response = await axios.get("http://127.0.0.1:8000/api/parties");
+        const response = await axios.get(
+          `${import.meta.env.VITE_BACKEND_URL}/api/parties`
+        );
         setParties(response.data);
       } catch (error) {
         console.error("Error fetching parties:", error);

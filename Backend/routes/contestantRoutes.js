@@ -1,30 +1,15 @@
 const express = require("express");
 const router = express.Router();
 const contestantController = require("../controllers/contestantController");
-const { requireAuth, requireAdmin } = require("../middleware/authMiddleware");
 const { validateContestant } = require("../middleware/validationMiddleware");
 
-// Apply authentication, authorization, and validation middleware
-router.post(
-  "/",
-  requireAuth,
-  requireAdmin,
-  validateContestant,
-  contestantController.createContestant
-);
+router.post("/", validateContestant, contestantController.createContestant);
 router.get("/", contestantController.getContestants);
-router.put(
-  "/:id",
-  requireAuth,
-  requireAdmin,
-  validateContestant,
-  contestantController.updateContestant
-);
-router.delete(
-  "/:id",
-  requireAuth,
-  requireAdmin,
-  contestantController.deleteContestant
-);
+router.get("/statistics", contestantController.getCandidateStatistics);
+router.get("/count", contestantController.getContestantCount);
+router.get("/search", contestantController.searchContestant);
+router.get("/:id", contestantController.getContestantById);
+router.put("/:id", validateContestant, contestantController.updateContestant);
+router.delete("/:id", contestantController.deleteContestant);
 
 module.exports = router;
