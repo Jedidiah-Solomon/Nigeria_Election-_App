@@ -6,6 +6,7 @@ import {
   FaRegBuilding,
   FaCalendarAlt,
 } from "react-icons/fa";
+import Countdown from "./Countdown";
 
 const Homepage = () => {
   const [voterCount, setVoterCount] = useState(0);
@@ -85,6 +86,7 @@ const Homepage = () => {
           <p>Learn more about the candidates and their positions.</p>
         </div>
       </div>
+      <Countdown />
     </main>
   );
 };
