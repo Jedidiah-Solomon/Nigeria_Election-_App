@@ -18,6 +18,9 @@ router.put("/:id", voterController.updateVoter);
 // Route to search for a voter
 router.get("/search", voterController.searchVoter);
 
+// Route to search for a voter by NIN
+router.get("/search-by-nin", voterController.searchVoterByNin);
+
 // Get a voter by ID
 router.get("/:id", voterController.getVoterById);
 

@@ -41,6 +41,9 @@ const Header = () => {
           <Link to="/admin-login" className="hover:underline">
             Admin
           </Link>
+          <Link to="/voter-register" className="hover:underline">
+            Voter
+          </Link>
         </nav>
         <button
           className="laptop:hidden text-2xl focus:outline-none"
@@ -65,6 +68,9 @@ const Header = () => {
           </Link>
           <Link to="/admin-login" className="block py-2 hover:underline">
             Admin
+          </Link>
+          <Link to="/voter-register" className="block py-2 hover:underline">
+            Voter
           </Link>
         </nav>
       )}

@@ -109,3 +109,30 @@ exports.searchVoter = async (req, res) => {
       .json({ message: "Server error occurred while searching for voter" });
   }
 };
+
+// Search voters by query parameters - NIN
+exports.searchVoterByNin = async (req, res) => {
+  try {
+    const { firstName, lastName, NIN } = req.query;
+
+    const query = {};
+    if (firstName) query.firstName = firstName;
+    if (lastName) query.lastName = lastName;
+    if (NIN) query.NIN = NIN;
+
+    console.log("Query Object:", query);
+
+    const voter = await Voter.findOne(query).exec();
+
+    if (!voter) {
+      return res.status(404).json({ message: "Voter not found" });
+    }
+
+    res.status(200).json(voter);
+  } catch (error) {
+    console.error("Error searching for voter:", error.message);
+    res
+      .status(500)
+      .json({ message: "Server error occurred while searching for voter" });
+  }
+};

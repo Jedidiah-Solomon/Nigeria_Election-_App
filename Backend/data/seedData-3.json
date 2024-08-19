@@ -1,0 +1,62 @@
+{
+  "governorshipElections": [
+    {
+      "state": "Lagos",
+      "candidates": [
+        {
+          "firstName": "Babajide",
+          "lastName": "Sanwolu",
+          "position": "Governor",
+          "partyName": "Apc"
+        },
+        {
+          "firstName": "Babajide",
+          "lastName": "Sanwolu",
+          "position": "Governor",
+          "partyName": "Apc"
+        },
+        {
+          "firstName": "Jane",
+          "lastName": "Smith",
+          "position": "Governor",
+          "partyName": "Apc"
+        }
+      ]
+    },
+    {
+      "state": "Rivers",
+      "candidates": [
+        {
+          "firstName": "Alex",
+          "lastName": "Otti",
+          "position": "Governor",
+          "partyName": "Lp"
+        },
+        {
+          "firstName": "Bob",
+          "lastName": "Brown",
+          "position": "Governor",
+          "partyName": "APGA"
+        }
+      ]
+    }
+  ],
+  "presidentialElections": [
+    {
+      "candidates": [
+        {
+          "firstName": "Michael",
+          "lastName": "Clark",
+          "position": "President",
+          "partyName": "PDP"
+        },
+        {
+          "firstName": "Emily",
+          "lastName": "Evans",
+          "position": "President",
+          "partyName": "APC"
+        }
+      ]
+    }
+  ]
+}

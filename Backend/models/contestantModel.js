@@ -16,6 +16,8 @@ const contestantSchema = new mongoose.Schema(
   { collection: "contestants" }
 );
 
-const Contestant = mongoose.model("Contestant", contestantSchema);
+// Check if the model is already compiled to avoid OverwriteModelError
+const Contestant =
+  mongoose.models.Contestant || mongoose.model("Contestant", contestantSchema);
 
 module.exports = Contestant;

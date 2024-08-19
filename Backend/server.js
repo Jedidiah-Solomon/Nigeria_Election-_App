@@ -23,6 +23,8 @@ app.use(
   cors({
     credentials: true,
     origin: process.env.CORS_ORIGIN || "http://localhost:5000",
+    methods: "GET,POST,PUT,DELETE",
+    allowedHeaders: "Content-Type,Authorization",
   })
 );
 
@@ -62,7 +64,14 @@ app.use(express.static(path.join(__dirname, "../Frontend")));
 // Routes
 app.use("/api/voters", require("./routes/voterRoutes"));
 app.use("/api/contestants", require("./routes/contestantRoutes"));
-app.use("/api/elections", require("./routes/electionRoutes"));
+app.use(
+  "/api/presidential-elections",
+  require("./routes/presidentialElectionRoutes")
+);
+app.use(
+  "/api/governorship-elections",
+  require("./routes/governorshipElectionRoutes")
+);
 app.use("/api/parties", require("./routes/partyRoutes"));
 app.use("/api/admin", require("./routes/adminRoutes"));
 

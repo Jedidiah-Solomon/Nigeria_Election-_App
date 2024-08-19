@@ -18,6 +18,13 @@ import VoterSearch from "./components/VoterSearch";
 import VoterSearchDelete from "./components/VoterSearchDelete";
 import ContestantSearch from "./components/ContestantSearch";
 import ContestantSearchDelete from "./components/ContestantSearchDelete";
+import Voter from "./components/VoterPage";
+import VoterRegistration from "./components/VoterRegistration";
+import VoterElection from "./components/VoterElection";
+import GovernorshipElection from "./components/GovernorshipElection";
+import PresidentialElection from "./components/PresidentialElection";
+import PresidentialResults from "./components/PresidentialResults";
+import GovernorshipResults from "./components/GovernorshipResults";
 
 const App = () => {
   return (
@@ -55,6 +62,27 @@ const App = () => {
           <Route
             path="/admin/search-voter-delete"
             element={<VoterSearchDelete />}
+          />
+          <Route path="/voter-register" element={<Voter />} />
+          <Route path="/voter-registration" element={<VoterRegistration />} />
+          <Route path="/voter-election" element={<VoterElection />} />
+          <Route
+            path="/governorship-election"
+            element={<GovernorshipElection />}
+          />
+          <Route
+            path="/presidential-election"
+            element={<PresidentialElection />}
+          />
+
+          <Route
+            path="/presidential-election-results"
+            element={<PresidentialResults />}
+          />
+
+          <Route
+            path="/governorship-election-results"
+            element={<GovernorshipResults />}
           />
         </Routes>
       </div>
