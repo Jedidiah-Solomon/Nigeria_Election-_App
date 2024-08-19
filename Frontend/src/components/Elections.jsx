@@ -1,12 +1,14 @@
 import React, { useState } from "react";
 import PresidentialResults from "./PresidentialResults";
 import GovernorshipResults from "./GovernorshipResults";
+import Countdown from "./Countdown";
 
 const Elections = () => {
   const [view, setView] = useState("presidential");
 
   return (
     <main className="container mx-auto p-4">
+      <Countdown />
       <h2 className="text-2xl font-bold mb-4">Elections</h2>
       <p>
         Information about the ongoing elections will be available here
