@@ -13,6 +13,8 @@ const GovernorshipElection = () => {
     candidates: [{ firstName: "", lastName: "", position: "", partyName: "" }],
   });
 
+  const [successMessage, setSuccessMessage] = useState("");
+
   const handleFormChange = (e) => {
     const { name, value } = e.target;
     setFormData((prevData) => ({
@@ -43,6 +45,14 @@ const GovernorshipElection = () => {
         formData
       );
       console.log("Election created successfully:", response.data);
+
+      // Set success message
+      setSuccessMessage("Voting successful!");
+
+      // Clear success message after 10 seconds
+      setTimeout(() => {
+        setSuccessMessage("");
+      }, 10000);
 
       // Reset the form after successful submission
       setFormData({
@@ -148,6 +158,11 @@ const GovernorshipElection = () => {
           Submit Vote
         </button>
       </form>
+
+      {/* Conditionally render the success message */}
+      {successMessage && (
+        <p className="mt-4 text-green-600 font-semibold">{successMessage}</p>
+      )}
     </div>
   );
 };

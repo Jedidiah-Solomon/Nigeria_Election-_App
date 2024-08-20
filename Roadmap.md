@@ -79,6 +79,7 @@ Defined roles for voters and admins with appropriate permissions.
 NIGERIA_ELECTION_APP/
 │
 ├── .gitignore
+|-- .env
 ├── README.md
 ├── Roadmap.md
 ├── Frontend/
@@ -108,19 +109,29 @@ NIGERIA_ELECTION_APP/
 |-- /config
 |   |-- db.js
 |-- /controllers
-|   |-- electionController.js
+|   |-- partyController.js
 |   |-- voterController.js
 |   |-- contestantController.js
+|   |-- adminController.js
+|   |-- governorshipElectionController.js
+|   |-- presidentialElectionController.js
 |-- /middleware
 |   |-- authMiddleware.js
+|   |-- validationMiddleware.js
 |-- /models
-|   |-- electionModel.js
+|   |-- partyModel.js
 |   |-- voterModel.js
 |   |-- contestantModel.js
+|   |-- adminModel.js
+|   |-- governorshipElectionModel.js
+|   |-- presidentialElectionModel.js
 |-- /routes
-|   |-- electionRoutes.js
+|   |-- partyRoutes.js
 |   |-- voterRoutes.js
 |   |-- contestantRoutes.js
+|   |-- adminRoutes.js
+|   |-- governorshipElectionRoutes.js
+|   |-- presidentialElectionRoutes.js
 |-- /utils
 |   |-- helperFunctions.js
 |-- /data

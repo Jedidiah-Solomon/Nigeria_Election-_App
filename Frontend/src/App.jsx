@@ -25,6 +25,11 @@ import GovernorshipElection from "./components/GovernorshipElection";
 import PresidentialElection from "./components/PresidentialElection";
 import PresidentialResults from "./components/PresidentialResults";
 import GovernorshipResults from "./components/GovernorshipResults";
+import ElectionDetails from "./components/ElectionDetails";
+import ElectionNews from "./components/ElectionNews";
+import GovernorshipElectionWinner from "./components/GovernorshipElectionWinner";
+import PresidentialElectionWinner from "./components/PresidentialElectionWinner";
+import Winners from "./components/Winners";
 
 const App = () => {
   return (
@@ -84,6 +89,17 @@ const App = () => {
             path="/governorship-election-results"
             element={<GovernorshipResults />}
           />
+          <Route path="/election-details" element={<ElectionDetails />} />
+          <Route path="/election-news" element={<ElectionNews />} />
+          <Route
+            path="/governorship-election-winners"
+            element={<GovernorshipElectionWinner />}
+          />
+          <Route
+            path="/presidential-election-winner"
+            element={<PresidentialElectionWinner />}
+          />
+          <Route path="/winners" element={<Winners />} />
         </Routes>
       </div>
       <Footer />

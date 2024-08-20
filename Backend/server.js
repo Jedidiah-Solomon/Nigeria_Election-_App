@@ -74,6 +74,7 @@ app.use(
 );
 app.use("/api/parties", require("./routes/partyRoutes"));
 app.use("/api/admin", require("./routes/adminRoutes"));
+app.use("/api/utils", require("./routes/utilsRoutes"));
 
 // Start server
 const PORT = process.env.PORT || 5000;

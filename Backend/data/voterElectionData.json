@@ -1,0 +1,52 @@
+{
+  "governorship": [
+    {
+      "electionName": "Governorship",
+      "state": "Rivers",
+      "candidates": [
+        {
+          "firstName": "Alex",
+          "lastName": "Nneoma",
+          "position": "Governor",
+          "partyName": "Lp"
+        }
+      ]
+    },
+    {
+      "electionName": "Governorship",
+      "state": "Rivers",
+      "candidates": [
+        {
+          "firstName": "Alex",
+          "lastName": "Nneoma",
+          "position": "Governor",
+          "partyName": "Lp"
+        }
+      ]
+    },
+    {
+      "electionName": "Governorship",
+      "state": "Rivers",
+      "candidates": [
+        {
+          "firstName": "Peterside",
+          "lastName": "One",
+          "position": "Governor",
+          "partyName": "Apc"
+        }
+      ]
+    },
+    {
+      "electionName": "Governorship",
+      "state": "Rivers",
+      "candidates": [
+        {
+          "firstName": "Benson",
+          "lastName": "Inumide",
+          "position": "Governor",
+          "partyName": "Apga"
+        }
+      ]
+    }
+  ]
+}

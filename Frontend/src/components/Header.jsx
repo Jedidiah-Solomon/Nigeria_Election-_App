@@ -38,11 +38,18 @@ const Header = () => {
           <Link to="/parties" className="hover:underline">
             Parties
           </Link>
-          <Link to="/admin-login" className="hover:underline">
-            Admin
-          </Link>
+
           <Link to="/voter-register" className="hover:underline">
             Voter
+          </Link>
+          <Link to="/winners" className="hover:underline">
+            Winners
+          </Link>
+          <Link to="/election-details" className="hover:underline">
+            News
+          </Link>
+          <Link to="/admin-login" className="hover:underline">
+            Admin
           </Link>
         </nav>
         <button
@@ -66,11 +73,17 @@ const Header = () => {
           <Link to="/parties" className="block py-2 hover:underline">
             Parties
           </Link>
-          <Link to="/admin-login" className="block py-2 hover:underline">
-            Admin
-          </Link>
           <Link to="/voter-register" className="block py-2 hover:underline">
             Voter
+          </Link>{" "}
+          <Link to="/winners" className="block py-2 hover:underline">
+            Winners
+          </Link>
+          <Link to="/election-details" className="block py-2 hover:underline">
+            News
+          </Link>
+          <Link to="/admin-login" className="block py-2 hover:underline">
+            Admin
           </Link>
         </nav>
       )}
