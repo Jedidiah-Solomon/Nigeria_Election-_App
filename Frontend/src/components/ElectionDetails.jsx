@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
+import { Link } from "react-router-dom";
 
 const ElectionDetails = () => {
   const [formattedData, setFormattedData] = useState(null);
@@ -41,14 +42,12 @@ const ElectionDetails = () => {
               ? formattedData.description.substring(0, 100) + "..."
               : formattedData.description}
             {formattedData.description.length > 100 && (
-              <a
-                href="/election-news"
-                target="_self"
-                rel="noopener noreferrer"
+              <Link
+                to="/election-news"
                 className="text-customGreen-dark font-bold hover:underline ml-2"
               >
                 Read More
-              </a>
+              </Link>
             )}
           </p>
         </div>
