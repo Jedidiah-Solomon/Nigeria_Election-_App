@@ -30,6 +30,7 @@ import ElectionNews from "./components/ElectionNews";
 import GovernorshipElectionWinner from "./components/GovernorshipElectionWinner";
 import PresidentialElectionWinner from "./components/PresidentialElectionWinner";
 import Winners from "./components/Winners";
+import NotFound from "./components/NotFound";
 
 const App = () => {
   return (
@@ -100,6 +101,7 @@ const App = () => {
             element={<PresidentialElectionWinner />}
           />
           <Route path="/winners" element={<Winners />} />
+          <Route path="*" element={<NotFound />} />
         </Routes>
       </div>
       <Footer />

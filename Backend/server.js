@@ -55,9 +55,6 @@ app.use(
 // Use Morgan for logging
 app.use(morgan("dev"));
 
-// Serve static files from Frontend directory
-app.use(express.static(path.join(__dirname, "../Frontend")));
-
 // Serve TinyMCE static files
 // app.use(
 //   "/tinymce",
@@ -78,6 +75,29 @@ app.use(
 app.use("/api/parties", require("./routes/partyRoutes"));
 app.use("/api/admin", require("./routes/adminRoutes"));
 app.use("/api/utils", require("./routes/utilsRoutes"));
+
+// Serve static files from Frontend directory - For production use dist/
+app.use(express.static(path.join(__dirname, "../Frontend")));
+
+// Global 404 Handling
+app.use((req, res, next) => {
+  // If the request is not for an API endpoint or static file
+  if (
+    req.originalUrl.startsWith("/api/") ||
+    (req.method === "GET" && req.url.startsWith("/"))
+  ) {
+    return res
+      .status(404)
+      .json({ message: "Route Not Found, Please check again!😭" });
+  }
+  next();
+});
+
+// Error handling middleware
+app.use((err, req, res, next) => {
+  console.error(err.stack);
+  res.status(500).send("Something broke!");
+});
 
 // Start server
 const PORT = process.env.PORT || 5000;
