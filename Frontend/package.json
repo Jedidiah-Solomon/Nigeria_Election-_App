@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "start": "vite",
-    "build": "cross-env NODE_ENV=production vite build",
+    "build": "npm run postcss:build && cross-env NODE_ENV=production vite build",
     "serve": "vite preview",
     "postcss:build": "postcss src/assets/styles/input.css -o src/assets/styles/style.css",
     "watch:css": "postcss src/assets/styles/input.css -o src/assets/styles/style.css --watch",
