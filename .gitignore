@@ -11,7 +11,7 @@ Frontend/dist/
 *.log
 
 # Vite build output
-dist/
+##dist/
 
 # MacOS
 .DS_Store

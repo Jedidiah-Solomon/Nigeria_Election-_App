@@ -7,7 +7,7 @@ const MongoStore = require("connect-mongo");
 const path = require("path");
 const morgan = require("morgan");
 const cors = require("cors");
-const { requireAdmin } = require("./middleware/authMiddleware");
+// const { requireAdmin } = require("./middleware/authMiddleware");
 
 const connectDB = require("./config/db");
 
@@ -15,6 +15,9 @@ const app = express();
 
 // Connect to database
 connectDB();
+
+// Home route
+app.use("/", require("./routes/homeRoutes"));
 
 // Middleware
 app.use(express.json());

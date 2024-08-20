@@ -1,5 +1,5 @@
 const PresidentialElection = require("../models/presidentialElectionModel");
-const ContestantModel = require("../models/ContestantModel");
+const ContestantModel = require("../models/contestantModel");
 
 // Create a new presidential election
 exports.createPresidentialElection = async (req, res) => {

@@ -1,5 +1,5 @@
 const GovernorshipElection = require("../models/governorshipElectionModel");
-const ContestantModelGovernorship = require("../models/ContestantModel");
+const ContestantModelGovernorship = require("../models/contestantModel");
 
 // Create a new governorship election
 exports.createGovernorshipElection = async (req, res) => {
