@@ -5,15 +5,15 @@
 - [PORTS](#ports)
 - [License](#license)
 - [Installation](#installation)
-    - [Clone the repository](#clone-the-repository)
-    - [Navigate to the project directory](#navigate-to-the-project-directory)
-    - [Install dependencies for the backend](#install-dependencies-for-the-backend)
-    - [Install dependencies for the frontend](#install-dependencies-for-the-frontend)
-    - [Start the backend server](#start-the-backend-server)
-    - [Start the frontend server](#start-the-frontend-server)
+  - [Clone the repository](#clone-the-repository)
+  - [Navigate to the project directory](#navigate-to-the-project-directory)
+  - [Install dependencies for the backend](#install-dependencies-for-the-backend)
+  - [Install dependencies for the frontend](#install-dependencies-for-the-frontend)
+  - [Start the backend server](#start-the-backend-server)
+  - [Start the frontend server](#start-the-frontend-server)
 - [Voting](#voting)
 - [FAQ](#faq)
-    - [How do I report a bug?](#how-do-i-report-a-bug)
+  - [How do I report a bug?](#how-do-i-report-a-bug)
 - [Gallery](#gallery)
 
 # Nigeria Election App
@@ -28,7 +28,7 @@ Nigeria Election App simulates online voting using the Voter's card and Independ
 
 1. Front-end: 5000
 2. Back-end: 8000
-3. Ensure in deployment, change the CORS_ORIGIN to the url `CORS_ORIGIN=http://the-production-frontend-url.com`
+3. Ensure in deployment, change the CORS_ORIGIN to the URL `CORS_ORIGIN=https://the-production-frontend-url.com` and VITE_BACKEND_URL to the URL `VITE_BACKEND_URL=https://the-production-backend-url.com`
 
 # License
 
