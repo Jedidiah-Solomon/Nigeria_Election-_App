@@ -8,12 +8,13 @@ const toSentenceCase = (str) => {
 
 const GovernorshipElection = () => {
   const [formData, setFormData] = useState({
-    electionName: "Governorship", // Set default value
+    electionName: "Governorship",
     state: "",
     candidates: [{ firstName: "", lastName: "", position: "", partyName: "" }],
   });
 
   const [successMessage, setSuccessMessage] = useState("");
+  const [errorMessage, setErrorMessage] = useState("");
 
   const handleFormChange = (e) => {
     const { name, value } = e.target;
@@ -40,14 +41,20 @@ const GovernorshipElection = () => {
     e.preventDefault();
 
     try {
+      const voterNIN = sessionStorage.getItem("voterNIN");
+      if (!voterNIN) {
+        throw new Error("Voter NIN is not found in session storage.");
+      }
+
       const response = await axios.post(
         `${import.meta.env.VITE_BACKEND_URL}/api/governorship-elections/create`,
-        formData
+        { ...formData, voterNIN }
       );
       console.log("Election created successfully:", response.data);
 
       // Set success message
       setSuccessMessage("Voting successful!");
+      setErrorMessage("");
 
       // Clear success message after 10 seconds
       setTimeout(() => {
@@ -64,6 +71,9 @@ const GovernorshipElection = () => {
       });
     } catch (error) {
       console.error("Error creating election:", error);
+      // Set error message
+      setErrorMessage(error.response?.data?.message || error.message);
+      setSuccessMessage("");
     }
   };
 
@@ -161,7 +171,16 @@ const GovernorshipElection = () => {
 
       {/* Conditionally render the success message */}
       {successMessage && (
-        <p className="mt-4 text-green-600 font-semibold">{successMessage}</p>
+        <p className="mt-4 text-green-600 font-semibold text-center">
+          {successMessage}
+        </p>
+      )}
+
+      {/* Conditionally render the error message */}
+      {errorMessage && (
+        <p className="mt-4 text-red-600 font-semibold text-center">
+          {errorMessage}
+        </p>
       )}
     </div>
   );

@@ -15,6 +15,6 @@ const voterSchema = new mongoose.Schema(
   { collection: "voters" }
 );
 
-const Voter = mongoose.model("Voter", voterSchema);
+const Voter = mongoose.models.Voter || mongoose.model("Voter", voterSchema);
 
 module.exports = Voter;

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import axios from "axios";
 
 // Utility function to convert a string to sentence case
@@ -8,11 +8,24 @@ const toSentenceCase = (str) => {
 
 const PresidentialElection = () => {
   const [formData, setFormData] = useState({
-    electionName: "Presidential", // Set default value
+    electionName: "Presidential", // Default value
     candidates: [{ firstName: "", lastName: "", position: "", partyName: "" }],
+    voterNIN: "",
   });
 
   const [successMessage, setSuccessMessage] = useState("");
+  const [errorMessage, setErrorMessage] = useState("");
+
+  // Effect to retrieve voterNIN from sessionStorage when component mounts
+  useEffect(() => {
+    const storedNIN = sessionStorage.getItem("voterNIN");
+    if (storedNIN) {
+      setFormData((prevData) => ({
+        ...prevData,
+        voterNIN: storedNIN,
+      }));
+    }
+  }, []);
 
   const handleFormChange = (e) => {
     const { name, value } = e.target;
@@ -39,29 +52,38 @@ const PresidentialElection = () => {
     e.preventDefault();
 
     try {
+      // Make sure the data being sent includes voterNIN, electionName, and candidates
       const response = await axios.post(
         `${import.meta.env.VITE_BACKEND_URL}/api/presidential-elections/create`,
         formData
       );
       console.log("Election created successfully:", response.data);
 
-      // Set success message
+      // Set success message and reset form
       setSuccessMessage("Voting successful!");
+      setErrorMessage("");
 
-      // Clear success message after 10 seconds
       setTimeout(() => {
         setSuccessMessage("");
       }, 10000);
 
-      // Reset the form after successful submission
       setFormData({
         electionName: "Presidential",
         candidates: [
           { firstName: "", lastName: "", position: "", partyName: "" },
         ],
+        voterNIN: "", // Reset voterNIN
       });
     } catch (error) {
       console.error("Error creating election:", error);
+
+      // Set error message based on error type
+      setErrorMessage(
+        error.response?.status === 403
+          ? "You have already voted in this election."
+          : "An error occurred. Please try again."
+      );
+      setSuccessMessage(""); // Clear any previous success message
     }
   };
 
@@ -77,6 +99,7 @@ const PresidentialElection = () => {
           name="electionName"
           value={formData.electionName}
         />
+        <input type="hidden" name="voterNIN" value={formData.voterNIN} />
 
         {formData.candidates.map((candidate, index) => (
           <div key={index} className="space-y-2">
@@ -138,9 +161,19 @@ const PresidentialElection = () => {
           Submit Vote
         </button>
       </form>
+
       {/* Conditionally render the success message */}
       {successMessage && (
-        <p className="mt-4 text-green-600 font-semibold">{successMessage}</p>
+        <p className="mt-4 text-green-600 font-semibold text-center">
+          {successMessage}
+        </p>
+      )}
+
+      {/* Conditionally render the error message */}
+      {errorMessage && (
+        <p className="mt-4 text-red-600 font-semibold text-center">
+          {errorMessage}
+        </p>
       )}
     </div>
   );

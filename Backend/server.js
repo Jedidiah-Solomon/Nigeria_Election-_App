@@ -82,10 +82,7 @@ app.use(express.static(path.join(__dirname, "../Frontend")));
 // Global 404 Handling
 app.use((req, res, next) => {
   // If the request is not for an API endpoint or static file
-  if (
-    req.originalUrl.startsWith("/api/") ||
-    (req.method === "GET" && req.url.startsWith("/"))
-  ) {
+  if (!req.originalUrl.startsWith("/api/") && !req.url.startsWith("/")) {
     return res
       .status(404)
       .json({ message: "Route Not Found, Please check again!😭" });

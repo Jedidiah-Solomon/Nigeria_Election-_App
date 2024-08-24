@@ -1,14 +1,50 @@
 const PresidentialElection = require("../models/presidentialElectionModel");
 const ContestantModel = require("../models/contestantModel");
+const VoterRecord = require("../models/voterRecordModel");
 
 // Create a new presidential election
 exports.createPresidentialElection = async (req, res) => {
   try {
-    const election = new PresidentialElection(req.body);
+    const { voterNIN, electionName, candidates } = req.body;
+
+    // Validate that all required fields are present
+    if (!voterNIN || !electionName || !candidates || candidates.length === 0) {
+      return res.status(400).json({ message: "Missing required fields." });
+    }
+
+    // Check if the voter has already voted in the presidential election
+    const existingRecord = await VoterRecord.findOne({
+      voterNIN: voterNIN,
+      electionType: "Presidential",
+    });
+
+    if (existingRecord) {
+      return res.status(403).json({
+        message:
+          "You have already voted in this election. Double voting is not allowed.",
+      });
+    }
+
+    // If not already voted, create a new voter record
+    const voterRecord = new VoterRecord({
+      voterNIN: voterNIN,
+      electionType: "Presidential",
+    });
+    await voterRecord.save();
+
+    // Save the new presidential election vote
+    const election = new PresidentialElection({
+      electionName,
+      candidates,
+    });
     await election.save();
+
     res.status(201).json(election);
   } catch (error) {
-    res.status(400).json({ message: error.message });
+    console.error("Error creating presidential election:", error);
+    res
+      .status(500)
+      .json({ message: "Internal Server Error. Please try again later." });
   }
 };
 

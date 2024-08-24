@@ -11,6 +11,8 @@ const VoterRegistration = () => {
   const [errorMessage, setErrorMessage] = useState("");
   const navigate = useNavigate();
 
+  const [successMessage, setSuccessMessage] = useState("");
+
   const handleInputChange = (e) => {
     setVoterData({ ...voterData, [e.target.name]: e.target.value });
   };
@@ -33,7 +35,15 @@ const VoterRegistration = () => {
       console.log("Response received:", response);
 
       if (response.status === 200 && response.data) {
-        navigate("/voter-election");
+        // Save the NIN in sessionStorage
+        sessionStorage.setItem("voterNIN", trimmedVoterData.NIN);
+        // Set success message
+        setSuccessMessage("Voting successful!");
+
+        // Delay navigation to show success message
+        setTimeout(() => {
+          navigate("/voter-election");
+        }, 2000);
       }
     } catch (error) {
       console.error(
@@ -103,6 +113,12 @@ const VoterRegistration = () => {
             <div className="text-red-500 text-sm mb-4 text-center">
               {errorMessage}
             </div>
+          )}
+
+          {successMessage && (
+            <p className="mt-4 text-green-600 font-semibold text-center">
+              {successMessage}
+            </p>
           )}
 
           <button
