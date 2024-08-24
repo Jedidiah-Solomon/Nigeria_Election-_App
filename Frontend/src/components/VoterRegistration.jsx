@@ -38,7 +38,7 @@ const VoterRegistration = () => {
         // Save the NIN in sessionStorage
         sessionStorage.setItem("voterNIN", trimmedVoterData.NIN);
         // Set success message
-        setSuccessMessage("Voting successful!");
+        setSuccessMessage("Login successful!");
 
         // Delay navigation to show success message
         setTimeout(() => {

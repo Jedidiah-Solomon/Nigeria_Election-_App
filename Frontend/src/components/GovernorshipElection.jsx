@@ -1,6 +1,20 @@
 import React, { useState } from "react";
 import axios from "axios";
 
+// List of allowed party names
+const ALLOWED_PARTIES = [
+  "Adc",
+  "Adp",
+  "Apc",
+  "Apga",
+  "Lp",
+  "Nnpp",
+  "Pdp",
+  "Sdp",
+  "Ypp",
+  "Zlp",
+];
+
 // Utility function to convert a string to sentence case
 const toSentenceCase = (str) => {
   return str.charAt(0).toUpperCase() + str.slice(1).toLowerCase();
@@ -37,8 +51,25 @@ const GovernorshipElection = () => {
     }));
   };
 
+  const validatePartyName = (partyName) => {
+    return ALLOWED_PARTIES.includes(partyName);
+  };
+
   const handleSubmit = async (e) => {
     e.preventDefault();
+
+    // Validate all candidates' party names
+    const invalidPartyNames = formData.candidates
+      .map((candidate) => candidate.partyName)
+      .filter((partyName) => !validatePartyName(partyName));
+
+    if (invalidPartyNames.length > 0) {
+      setErrorMessage(
+        "Invalid party name(s) entered. Please use one of the allowed party names."
+      );
+      setSuccessMessage("");
+      return;
+    }
 
     try {
       const voterNIN = sessionStorage.getItem("voterNIN");

@@ -6,9 +6,23 @@ const toSentenceCase = (str) => {
   return str.charAt(0).toUpperCase() + str.slice(1).toLowerCase();
 };
 
+// List of specified parties in sentence case
+const parties = [
+  "Adc",
+  "Adp",
+  "Apc",
+  "Apga",
+  "Lp",
+  "Nnpp",
+  "Pdp",
+  "Sdp",
+  "Ypp",
+  "Zlp",
+];
+
 const PresidentialElection = () => {
   const [formData, setFormData] = useState({
-    electionName: "Presidential", // Default value
+    electionName: "Presidential",
     candidates: [{ firstName: "", lastName: "", position: "", partyName: "" }],
     voterNIN: "",
   });
@@ -16,7 +30,6 @@ const PresidentialElection = () => {
   const [successMessage, setSuccessMessage] = useState("");
   const [errorMessage, setErrorMessage] = useState("");
 
-  // Effect to retrieve voterNIN from sessionStorage when component mounts
   useEffect(() => {
     const storedNIN = sessionStorage.getItem("voterNIN");
     if (storedNIN) {
@@ -38,10 +51,17 @@ const PresidentialElection = () => {
   const handleCandidateChange = (index, e) => {
     const { name, value } = e.target;
     const newCandidates = [...formData.candidates];
-    newCandidates[index] = {
-      ...newCandidates[index],
-      [name]: toSentenceCase(value),
-    };
+    if (name === "partyName") {
+      newCandidates[index] = {
+        ...newCandidates[index],
+        [name]: toSentenceCase(value),
+      };
+    } else {
+      newCandidates[index] = {
+        ...newCandidates[index],
+        [name]: value,
+      };
+    }
     setFormData((prevData) => ({
       ...prevData,
       candidates: newCandidates,
@@ -52,14 +72,12 @@ const PresidentialElection = () => {
     e.preventDefault();
 
     try {
-      // Make sure the data being sent includes voterNIN, electionName, and candidates
       const response = await axios.post(
         `${import.meta.env.VITE_BACKEND_URL}/api/presidential-elections/create`,
         formData
       );
       console.log("Election created successfully:", response.data);
 
-      // Set success message and reset form
       setSuccessMessage("Voting successful!");
       setErrorMessage("");
 
@@ -72,18 +90,17 @@ const PresidentialElection = () => {
         candidates: [
           { firstName: "", lastName: "", position: "", partyName: "" },
         ],
-        voterNIN: "", // Reset voterNIN
+        voterNIN: "",
       });
     } catch (error) {
       console.error("Error creating election:", error);
 
-      // Set error message based on error type
       setErrorMessage(
         error.response?.status === 403
           ? "You have already voted in this election."
           : "An error occurred. Please try again."
       );
-      setSuccessMessage(""); // Clear any previous success message
+      setSuccessMessage("");
     }
   };
 
@@ -141,15 +158,22 @@ const PresidentialElection = () => {
             </label>
             <label className="block text-lg font-medium text-gray-700">
               Party Name:
-              <input
-                type="text"
+              <select
                 name="partyName"
-                placeholder="e.g PDP, APC"
                 className="mt-1 block w-full p-2 border border-gray-300 rounded-md"
                 value={candidate.partyName}
                 onChange={(e) => handleCandidateChange(index, e)}
                 required
-              />
+              >
+                <option value="" disabled>
+                  Select a party
+                </option>
+                {parties.map((party, idx) => (
+                  <option key={idx} value={party}>
+                    {party}
+                  </option>
+                ))}
+              </select>
             </label>
           </div>
         ))}
@@ -162,14 +186,12 @@ const PresidentialElection = () => {
         </button>
       </form>
 
-      {/* Conditionally render the success message */}
       {successMessage && (
         <p className="mt-4 text-green-600 font-semibold text-center">
           {successMessage}
         </p>
       )}
 
-      {/* Conditionally render the error message */}
       {errorMessage && (
         <p className="mt-4 text-red-600 font-semibold text-center">
           {errorMessage}

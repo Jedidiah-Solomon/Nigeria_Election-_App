@@ -1,7 +1,7 @@
 const GovernorshipElection = require("../models/governorshipElectionModel");
 const ContestantModelGovernorship = require("../models/contestantModel");
 const Voter = require("../models/voterModel");
-const VoterRecordGovernorship = require("../models/voterRecordGovernorshipModel");
+const VoterRecordGovernorship = require("../models/VoterRecordGovernorshipModel");
 
 // Verify voter's state and create a new governorship election
 exports.verifyAndCreateGovernorshipElection = async (req, res) => {
