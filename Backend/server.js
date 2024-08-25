@@ -75,6 +75,7 @@ app.use(
 app.use("/api/parties", require("./routes/partyRoutes"));
 app.use("/api/admin", require("./routes/adminRoutes"));
 app.use("/api/utils", require("./routes/utilsRoutes"));
+app.use("/api/payments", require("./routes/paymentRoutes"));
 
 // Serve static files from Frontend directory - For production use dist/
 app.use(express.static(path.join(__dirname, "../Frontend")));

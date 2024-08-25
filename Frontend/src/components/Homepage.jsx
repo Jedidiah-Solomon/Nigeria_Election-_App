@@ -7,15 +7,21 @@ import {
   FaCalendarAlt,
 } from "react-icons/fa";
 import Countdown from "./Countdown";
+import BuyMeCoffeeModal from "./BuyMeCoffeeModal";
 
 const Homepage = () => {
   const [voterCount, setVoterCount] = useState(0);
+
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const openModal = () => setIsModalOpen(true);
+  const closeModal = () => setIsModalOpen(false);
 
   useEffect(() => {
     const fetchVoterCount = async () => {
       try {
         const response = await axios.get(
-          "http://127.0.0.1:8000/api/voters/count"
+          `${import.meta.env.VITE_BACKEND_URL}/api/voters/count`
         );
         setVoterCount(response.data.count);
       } catch (error) {
@@ -87,6 +93,17 @@ const Homepage = () => {
         </div>
       </div>
       <Countdown />
+
+      <div className="flex justify-center mt-4">
+        <button
+          onClick={openModal}
+          className="bg-customGreen-dark hover:bg-customGreen-medium text-white p-2 rounded"
+        >
+          Buy Me Coffee🤝
+        </button>
+      </div>
+
+      <BuyMeCoffeeModal isOpen={isModalOpen} onClose={closeModal} />
     </main>
   );
 };
